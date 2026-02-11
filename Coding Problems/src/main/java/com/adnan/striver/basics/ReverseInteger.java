@@ -1,12 +1,10 @@
+package com.adnan.striver.basics;
+
 // Leetcode 7: (EASY)
 //  https://leetcode.com/problems/reverse-integer/
 
 public class ReverseInteger {
-    public static void main(String[] args) {
-        System.out.println(reverse(123));
-    }
-
-    public static int reverse(int x) {
+    public int reverse(int x) {
         long ans = 0;
 
         while (x != 0) {

@@ -1,15 +1,7 @@
-import java.util.Arrays;
+package com.adnan.striver.sorting1;
 
-public class SelectionSort {
-    public static void main(String args[]) {
-        int[] nums = {13, 46, 24, 52, 20, 9};
-        System.out.println("nums: " + Arrays.toString(nums));
-        int[] result = selectionSort(nums);
-        System.out.println("result: " + Arrays.toString(result));
-    }
-
-    public static int[] selectionSort(int[] arr) {
-        int count = 0;
+public class SelectionSort implements BaseSort {
+    public void sort(int[] arr) {
         for(int i = 0; i < arr.length - 1; i++) {
             int min_index = i;
 
@@ -20,16 +12,11 @@ public class SelectionSort {
                 if(arr[min_index] > arr[j]) {
                     min_index = j;
                 }
-                count++;
             }
 
             int temp = arr[min_index];
             arr[min_index] = arr[i];
             arr[i] = temp;
         }
-
-        System.out.println("Count: " + count);
-
-        return arr;
     }
 }

@@ -1,3 +1,5 @@
+package com.adnan.striver.basics;
+
 // Leetcode: 125 (EASY)
 // https://leetcode.com/problems/valid-palindrome/description/
 // 
@@ -8,12 +10,7 @@
 // Revisit: Java Character/String concepts
 
 public class ValidPalindrome {
-    public static void main(String[] args) {
-        // System.out.println(isPalindrome("A man, a plan, a canal: Panama"));
-        System.out.println(isPalindrome("0P"));
-    }
-
-    public static boolean isPalindrome(String s) {
+    public boolean isPalindrome(String s) {
         StringBuilder sb = new StringBuilder();
         for(int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);

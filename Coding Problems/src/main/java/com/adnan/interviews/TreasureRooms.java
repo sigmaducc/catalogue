@@ -1,3 +1,4 @@
+package com.adnan.interviews;
 /*
 
 You are with your friends in a castle, where there are multiple rooms named after flowers. Some of the rooms contain treasures - we call them the treasure rooms. 
@@ -83,7 +84,7 @@ I: number of instructions given
 import java.io.*;
 import java.util.*;
 
-public class Solution {
+public class TreasureRooms {
   public static void main(String[] argv) {
       String[][] instructions_1 = {
         {"jasmin", "tulip"},

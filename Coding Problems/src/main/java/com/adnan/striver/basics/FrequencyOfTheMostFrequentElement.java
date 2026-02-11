@@ -1,3 +1,4 @@
+package com.adnan.striver.basics;
 
 // Leetcode: 1838 (MEDIUM)
 // https://leetcode.com/problems/frequency-of-the-most-frequent-element/
@@ -8,29 +9,13 @@
 // All you have to do is use some brains and think. What if I started big and thought that all elements could be made same by using some constant.
 // That is exactly what we are doing here. We will try to assume every element can be upgraded into a number which will maximize our most frequent element requirement.
 // If we somehow find out that current element is filling the window and we are overflowing the limit(which is nothing but total of window and + k) we simply reduce 
-// the bucket/window size from right. If the the current element filling the window is underflowing then we need to shorten the window from left.
+// the bucket/window size from right. If the current element filling the window is underflowing then we need to shorten the window from left.
 // But we need to sort the numbers list first.  
 
 import java.util.Arrays;
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Comparator;
 
 public class FrequencyOfTheMostFrequentElement {
-    public static void main(String args[]) {
-        // int[] nums = {1, 2, 4};
-        // int[] nums = {1, 4, 8, 13};
-        int[] nums = {1, 1, 1, 1, 10};
-        // int[] nums = {9940,9995,9944,9937,9941,9952,9907,9952,9987,9964,9940,9914,9941,9933,9912,9934,9980,9907,9980,9944,9910,9997};
-        // int[] nums = {3, 9, 6};
-        // int[] nums = new int[30000];
-        // Arrays.fill(nums, 30000);
-        int k = 1;
-        // int k = 7925;
-        System.out.println(maxFrequency(nums, k));
-    }
-
-    public static int maxFrequency(int[] nums, int k) {
+    public int maxFrequency(int[] nums, int k) {
         int left = 0, maxWindowSize = 0; 
         long total = 0;
 
@@ -98,6 +83,4 @@ public class FrequencyOfTheMostFrequentElement {
 
     //     return maxValue;
     // }
-
-
 }
