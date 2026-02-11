@@ -13,9 +13,16 @@
 
 public class FibonnaciNumber {
     public static void main(String args[]) {
-        for(int i = 0; i <= 50; i++) {
-            System.out.println("Fib[" + i + "]: " + fib(i));
-        }
+        long startTime = System.nanoTime();
+        // for(int i = 0; i <= 50; i++) {
+            System.out.println("Fib[" + 10 + "]: " + fib(10));
+        // }
+        long endTime = System.nanoTime();
+        long durationInNano = endTime - startTime;
+        long durationInMilli = durationInNano / 1_000_000;
+
+        System.out.println("Execution time in nanoseconds: " + durationInNano);
+        System.out.println("Execution time in milliseconds: " + durationInMilli);
     }
 
     // public static int fib(int n) {
