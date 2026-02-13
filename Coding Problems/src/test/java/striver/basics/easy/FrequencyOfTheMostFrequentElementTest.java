@@ -1,6 +1,6 @@
-package striver.basics;
+package striver.basics.easy;
 
-import com.adnan.striver.basics.FrequencyOfTheMostFrequentElement;
+import com.adnan.striver.basics.easy.FrequencyOfTheMostFrequentElement;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

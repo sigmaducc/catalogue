@@ -1,4 +1,4 @@
-package com.adnan.striver.basics;
+package com.adnan.striver.basics.easy;
 
 // Leetcode: 1838 (MEDIUM)
 // https://leetcode.com/problems/frequency-of-the-most-frequent-element/

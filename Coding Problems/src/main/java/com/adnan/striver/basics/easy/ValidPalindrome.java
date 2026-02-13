@@ -1,12 +1,12 @@
-package com.adnan.striver.basics;
+package com.adnan.striver.basics.easy;
 
 // Leetcode: 125 (EASY)
 // https://leetcode.com/problems/valid-palindrome/description/
-// 
+
 // Note: Could use two pointer approach to avoid rebuilding the string again. Simply move pointer if it is 
 // non-alphanumeric character from both ends. If both pointers are alphanumeric only then compare and then 
 // move both pointers again.
-// 
+
 // Revisit: Java Character/String concepts
 
 public class ValidPalindrome {

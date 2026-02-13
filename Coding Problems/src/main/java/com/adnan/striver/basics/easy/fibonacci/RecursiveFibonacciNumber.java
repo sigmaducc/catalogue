@@ -1,4 +1,4 @@
-package com.adnan.striver.basics;
+package com.adnan.striver.basics.easy.fibonacci;
 
 // Leetcode: 509 (EASY)
 // https://leetcode.com/problems/fibonacci-number/
@@ -13,7 +13,7 @@ package com.adnan.striver.basics;
 // Need to start iteration from 1 because we always need to add 2 numbers to get sum; 
 // If we start from 0 the sum value won't be correct becuase it will only have 1 element for sum;
 
-public class RecursiveFibonacci implements BaseFibonacci {
+public class RecursiveFibonacciNumber implements com.adnan.striver.basics.easy.fibonacci.BaseFibonacciNumber {
     public int fib(int n) {
         int n1 = 0;
         int n2 = 1;

@@ -1,4 +1,4 @@
-package com.adnan.striver.basics;
+package com.adnan.striver.basics.easy;
 
 // Leetcode 9: (EASY)
 // https://leetcode.com/problems/palindrome-number/
