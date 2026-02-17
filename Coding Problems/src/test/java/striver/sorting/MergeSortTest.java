@@ -9,9 +9,9 @@ class MergeSortTest {
 
     private void compareWithJavaSort(BaseMergeSort sorter) {
         int[] input = {5, -2, 8, -10, 3};
-        int[] expected = Arrays.copyOf(input, input.length);
+        int[] output = Arrays.copyOf(input, input.length);
 
-        Arrays.sort(expected);
+        Arrays.sort(output);
 
         long start = System.nanoTime();
         sorter.sort(input);
@@ -21,7 +21,7 @@ class MergeSortTest {
 
         System.out.println(sorter.getClass().getSimpleName() + " took: " + duration + " ns");
 
-        assertArrayEquals(expected, input);
+        assertArrayEquals(output, input);
     }
 
     @Test

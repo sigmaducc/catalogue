@@ -11,9 +11,9 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 public class BasicSortTest {
 
     private void compareWithJavaSortWithArr(BaseSort sorter, int[] arr) {
-        int[] expected = Arrays.copyOf(arr, arr.length);
+        int[] output = Arrays.copyOf(arr, arr.length);
 
-        Arrays.sort(expected);
+        Arrays.sort(output);
         long start = System.nanoTime();
         sorter.sort(arr);
         long end = System.nanoTime();
@@ -22,14 +22,14 @@ public class BasicSortTest {
 
         System.out.println(sorter.getClass().getSimpleName() + " with arr took: " + duration + " ns");
 
-        assertArrayEquals(expected, arr);
+        assertArrayEquals(output, arr);
     }
 
     private void compareWithJavaSort(BaseSort sorter) {
         int[] input = {5, -2, 8, -10, 3};
-        int[] expected = Arrays.copyOf(input, input.length);
+        int[] output = Arrays.copyOf(input, input.length);
 
-        Arrays.sort(expected);
+        Arrays.sort(output);
 
         long start = System.nanoTime();
         sorter.sort(input);
@@ -39,7 +39,7 @@ public class BasicSortTest {
 
         System.out.println(sorter.getClass().getSimpleName() + " took: " + duration + " ns");
 
-        assertArrayEquals(expected, input);
+        assertArrayEquals(output, input);
     }
 
     @Test

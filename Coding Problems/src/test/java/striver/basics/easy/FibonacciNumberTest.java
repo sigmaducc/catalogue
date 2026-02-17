@@ -9,10 +9,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FibonacciNumberTest {
 
-    private void compareFib(BaseFibonacciNumber fibonacci, int n, int expected) {
+    private void compareFib(BaseFibonacciNumber fibonacci, int n, int output) {
         int result = fibonacci.fib(n);
 
-        assertEquals(expected, result);
+        assertEquals(output, result);
     }
 
     @Test

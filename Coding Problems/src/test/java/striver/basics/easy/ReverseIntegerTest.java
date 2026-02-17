@@ -11,26 +11,26 @@ public class ReverseIntegerTest {
     void testReverseInteger1() {
         int num = 123;
         int result = new ReverseInteger().reverse(num);
-        int expected = 321;
+        int output = 321;
 
-        assertEquals(expected, result);
+        assertEquals(output, result);
     }
 
     @Test
     void testReverseInteger2() {
         int num = -123;
         int result = new ReverseInteger().reverse(num);
-        int expected = -321;
+        int output = -321;
 
-        assertEquals(expected, result);
+        assertEquals(output, result);
     }
 
     @Test
     void testReverseInteger3() {
         int num = 120;
         int result = new ReverseInteger().reverse(num);
-        int expected = 21;
+        int output = 21;
 
-        assertEquals(expected, result);
+        assertEquals(output, result);
     }
 }
