@@ -1,4 +1,4 @@
-package com.adnan.striver.basics.medium;
+package com.adnan.striver.arrays.medium;
 
 // Leetcode 2149: Medium
 

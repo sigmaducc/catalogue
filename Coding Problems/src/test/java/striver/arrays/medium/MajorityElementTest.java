@@ -1,6 +1,6 @@
-package striver.arrays.easy;
+package striver.arrays.medium;
 
-import com.adnan.striver.arrays.easy.MajorityElement;
+import com.adnan.striver.arrays.medium.MajorityElement;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

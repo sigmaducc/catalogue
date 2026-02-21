@@ -1,4 +1,4 @@
-package com.adnan.striver.arrays.easy;
+package com.adnan.striver.arrays.hard;
 
 // Leetcode 88: EASY
 

@@ -1,6 +1,6 @@
-package striver.arrays.medium;
+package striver.arrays.hard;
 
-import com.adnan.striver.arrays.medium.MergeIntervals;
+import com.adnan.striver.arrays.hard.MergeIntervals;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;

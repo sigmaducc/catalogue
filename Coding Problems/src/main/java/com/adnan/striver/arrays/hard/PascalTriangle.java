@@ -1,4 +1,4 @@
-package com.adnan.striver.arrays.easy;
+package com.adnan.striver.arrays.hard;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.adnan.striver.arrays.medium;
+package com.adnan.striver.arrays.hard;
 
 import java.util.*;
 

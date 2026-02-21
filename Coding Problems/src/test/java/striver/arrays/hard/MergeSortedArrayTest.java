@@ -1,6 +1,6 @@
-package striver.arrays.easy;
+package striver.arrays.hard;
 
-import com.adnan.striver.arrays.easy.MergeSortedArray;
+import com.adnan.striver.arrays.hard.MergeSortedArray;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;

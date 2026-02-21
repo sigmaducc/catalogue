@@ -1,6 +1,6 @@
-package striver.arrays.medium;
+package striver.arrays.hard;
 
-import com.adnan.striver.arrays.medium.ThreeSum;
+import com.adnan.striver.arrays.hard.ThreeSum;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

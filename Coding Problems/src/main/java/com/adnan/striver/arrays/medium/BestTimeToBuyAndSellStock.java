@@ -1,4 +1,4 @@
-package com.adnan.striver.arrays.easy;
+package com.adnan.striver.arrays.medium;
 
 // LEETCODE 121: EASY
 

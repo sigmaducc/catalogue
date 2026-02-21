@@ -1,6 +1,6 @@
-package striver.arrays.easy;
+package striver.arrays.hard;
 
-import com.adnan.striver.arrays.easy.PascalTriangle;
+import com.adnan.striver.arrays.hard.PascalTriangle;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

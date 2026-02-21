@@ -1,6 +1,6 @@
-package striver.basics.medium;
+package striver.arrays.medium;
 
-import com.adnan.striver.basics.medium.RearrangeArrayElementsBySign;
+import com.adnan.striver.arrays.medium.RearrangeArrayElementsBySign;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
