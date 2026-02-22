@@ -1,6 +1,6 @@
-package striver.arrays.easy;
+package striver.arrays.medium;
 
-import com.adnan.striver.arrays.easy.TwoSum;
+import com.adnan.striver.arrays.medium.TwoSum;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
