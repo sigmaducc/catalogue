@@ -5,7 +5,7 @@ public class LongestSubarrayWithSumKWithPositives {
     // Time Complexity: O(n + n) ~ O(n)
     // Space Complexity O(1)
     public int longestSubarray(int[] nums, int k) {
-        int max = Integer.MIN_VALUE;
+        int max = 0;
         long sum = 0;
         int i = 0;
         int j = 0;

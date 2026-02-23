@@ -62,4 +62,15 @@ public class LongestSubarrayWithSumKWithPositivesTest {
         assertEquals(output, result);
     }
 
+    @Test
+    void test6() {
+        int[] nums = {-3, 2, 1};
+        int k = 6;
+        int output = 0;
+
+        int result = new LongestSubarrayWithSumKWithPositives().longestSubarray(nums, k);
+
+        assertEquals(output, result);
+    }
+
 }
