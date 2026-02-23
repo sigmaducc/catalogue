@@ -1,8 +1,6 @@
 package com.adnan.striver.arrays.medium;
 
 import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
 
 // LeetCode 128: MEDIUM
 // https://leetcode.com/problems/longest-consecutive-sequence/
@@ -27,54 +25,54 @@ public class LongestConsecutiveSequence {
 
     // Time Complexity: O(n * log n)
     // Space Complexity: O(1)
-//    public int longestConsecutive(int[] nums) {
-//        if(nums.length == 0) return 0;
-//
-//        Arrays.sort(nums);
-//
-//        int counter = 1;
-//        int maxCounter = 1;
-//        for(int i = 0; i <= nums.length - 2; i++) {
-//            if(nums[i] == nums[i+1]) continue;
-//
-//            if(nums[i] + 1 == nums[i+1])
-//                counter++;
-//            else
-//                counter = 1;
-//
-//            maxCounter = Math.max(counter, maxCounter);
-//        }
-//
-//        return maxCounter;
-//    }
-
-    // Time Complexity: O(n * n) or O(n * 1)
-    // Depending upon the collisions in set the complexity can vary between O(n) to O(n^2)
-    // Space Complexity: O(n)
     public int longestConsecutive(int[] nums) {
         if(nums.length == 0) return 0;
 
-        Set<Integer> set = new HashSet<>();
+        Arrays.sort(nums);
 
-        for(int i = 0; i <= nums.length - 1; i++) {
-            set.add(nums[i]);
-        }
-
+        int counter = 1;
         int maxCounter = 1;
-        for(Integer el: set) {
-            int counter = 1;
-            int prev = el - 1;
-            if(!set.contains(prev)) {
-                int next = el + 1;
-                while(set.contains(next)) {
-                    counter++;
-                    next++;
-                }
-            }
+        for(int i = 0; i <= nums.length - 2; i++) {
+            if(nums[i] == nums[i+1]) continue;
+
+            if(nums[i] + 1 == nums[i+1])
+                counter++;
+            else
+                counter = 1;
 
             maxCounter = Math.max(counter, maxCounter);
         }
 
         return maxCounter;
     }
+
+    // Time Complexity: O(n * n) or O(n * 1)
+    // Depending upon the collisions in set the complexity can vary between O(n) to O(n^2)
+    // Space Complexity: O(n)
+//    public int longestConsecutive(int[] nums) {
+//        if(nums.length == 0) return 0;
+//
+//        Set<Integer> set = new HashSet<>();
+//
+//        for(int i = 0; i <= nums.length - 1; i++) {
+//            set.add(nums[i]);
+//        }
+//
+//        int maxCounter = 1;
+//        for(Integer el: set) {
+//            int counter = 1;
+//            int prev = el - 1;
+//            if(!set.contains(prev)) {
+//                int next = el + 1;
+//                while(set.contains(next)) {
+//                    counter++;
+//                    next++;
+//                }
+//            }
+//
+//            maxCounter = Math.max(counter, maxCounter);
+//        }
+//
+//        return maxCounter;
+//    }
 }
