@@ -4,11 +4,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 // Non leetcode question (but from striver sheet)
-// TODO: Try sliding window for positive integers
+// DONE: Try sliding window for positive integers
+// Check LongestSubarrayWithSumKWithPositives
 
 public class LongestSubarrayWithSumK {
 
     // Time Complexity: O(n)
+    // Space Complexity: O(n)
     public int longestSubarray(int[] nums, int k) {
         Map<Long, Integer> map = new HashMap<>();
 
