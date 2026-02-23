@@ -3,7 +3,8 @@ package com.adnan.striver.arrays.medium;
 import java.util.HashMap;
 import java.util.Map;
 
-// Leetcode 1: EASY
+// LeetCode 1: EASY
+// https://leetcode.com/problems/two-sum/
 
 // Approach: We iterate over the array and store the number at each step with its index. While
 // we do this we also check for the diff which is nothing but (target - b) which will give a.

@@ -1,6 +1,6 @@
 package com.adnan.striver.basics.easy;
 
-// Leetcode: 1838 (MEDIUM)
+// LeetCode: 1838 (MEDIUM)
 // https://leetcode.com/problems/frequency-of-the-most-frequent-element/
 // Started off on the wrong foot without thinking much. I tried to eat up k until I made all numbers same because of naive logic. 
 // Turned out if you have all the same numbers in the array then difference would be 0 and my current logic would not work.

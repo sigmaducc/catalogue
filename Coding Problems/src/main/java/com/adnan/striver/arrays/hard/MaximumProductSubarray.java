@@ -1,6 +1,7 @@
 package com.adnan.striver.arrays.hard;
 
-// Leetcode 152: MEDIUM
+// LeetCode 152: MEDIUM
+// https://leetcode.com/problems/maximum-product-subarray/
 
 // Approach: After much brainstorming we can find that going through the
 // array from left to right and right to left and calculating prefix and

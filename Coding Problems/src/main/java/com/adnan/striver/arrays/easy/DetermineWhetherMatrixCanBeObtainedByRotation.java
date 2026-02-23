@@ -1,6 +1,7 @@
 package com.adnan.striver.arrays.easy;
 
-// Leetcode 1886: EASY
+// LeetCode 1886: EASY
+// https://leetcode.com/problems/determine-whether-matrix-can-be-obtained-by-rotation/
 
 // After a lot of brainstorming I understood that we have to use 12th maths.
 // 90 deg clockwise rotation = (transpose + reverse rows) or (reverse cols + transpose);

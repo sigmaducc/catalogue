@@ -3,7 +3,8 @@ package com.adnan.striver.arrays.hard;
 import java.util.ArrayList;
 import java.util.List;
 
-// Leetcode 118: EASY
+// LeetCode 118: EASY
+// https://leetcode.com/problems/pascals-triangle/
 
 // Approach 1: For levle 0 and level 1 simply add 1 and 1,1 to list and return;
 // Then we start from level 2 and go until n. For each level we first add 1 to list.

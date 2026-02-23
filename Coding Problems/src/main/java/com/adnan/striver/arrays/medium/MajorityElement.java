@@ -1,6 +1,7 @@
 package com.adnan.striver.arrays.medium;
 
-// Leetcode 169: EASY
+// LeetCode 169: EASY
+// https://leetcode.com/problems/majority-element/
 
 // First approach is quite easy, if we simply use a hashmap to store all the elements and their frequency.
 // Then we can iterate over map entries and keep track of max element and it's count.

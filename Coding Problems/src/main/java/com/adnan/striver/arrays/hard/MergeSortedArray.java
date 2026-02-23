@@ -1,6 +1,7 @@
 package com.adnan.striver.arrays.hard;
 
-// Leetcode 88: EASY
+// LeetCode 88: EASY
+// https://leetcode.com/problems/merge-sorted-array/
 
 // Approach 1: Make an array of size m and store all elements from nums1
 // until m in that. Then iterate over this m array and nums2 by using two pointers.

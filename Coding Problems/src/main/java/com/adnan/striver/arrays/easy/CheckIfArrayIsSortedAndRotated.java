@@ -1,6 +1,7 @@
 package com.adnan.striver.arrays.easy;
 
-// Leetcode 1752: EASY
+// LeetCode 1752: EASY
+// https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
 
 // Check how many times the graph goes down when comparing consecutive elements.
 // If the graph goes down 0 or 1 times it means the array is rotatable. If there

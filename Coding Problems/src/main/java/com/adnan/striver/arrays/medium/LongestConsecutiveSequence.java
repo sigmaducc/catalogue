@@ -4,7 +4,8 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-// Leetcode 128: MEDIUM
+// LeetCode 128: MEDIUM
+// https://leetcode.com/problems/longest-consecutive-sequence/
 
 // Approach 1: It is simple because we simply sort the array and check the number
 // of times we get consecutive numbers. Ignoring same numbers of course. When ever we get a

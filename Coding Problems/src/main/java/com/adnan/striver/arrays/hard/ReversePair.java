@@ -1,6 +1,7 @@
 package com.adnan.striver.arrays.hard;
 
-// Leetcode 493: HARD
+// LeetCode 493: HARD
+// https://leetcode.com/problems/reverse-pairs/
 
 // Approach: We need to find pairs that satisfy this condition:
 // 1. i < j

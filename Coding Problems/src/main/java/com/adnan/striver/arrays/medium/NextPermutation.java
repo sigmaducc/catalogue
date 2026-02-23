@@ -1,6 +1,7 @@
 package com.adnan.striver.arrays.medium;
 
-// Leetcode 31: MEDIUM
+// LeetCode 31: MEDIUM
+// https://leetcode.com/problems/next-permutation/
 
 // For number 123
 // We get:  123

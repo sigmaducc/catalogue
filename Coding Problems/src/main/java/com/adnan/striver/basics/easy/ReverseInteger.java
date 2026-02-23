@@ -1,6 +1,6 @@
 package com.adnan.striver.basics.easy;
 
-// Leetcode 7: (EASY)
+// LeetCode 7: (EASY)
 //  https://leetcode.com/problems/reverse-integer/
 
 // Using a simple math trick. Dividing a number by 10 gives non-zeroth place digits

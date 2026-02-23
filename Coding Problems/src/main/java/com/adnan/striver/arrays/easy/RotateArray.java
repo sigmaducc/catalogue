@@ -1,6 +1,7 @@
 package com.adnan.striver.arrays.easy;
 
-// Leetcode 189: MEDIUM
+// LeetCode 189: MEDIUM
+// https://leetcode.com/problems/rotate-array/
 
 // It's basically just an advanced version of rotate and array by 1
 // When rotating an array by 1 we just shift elements to right or left.

@@ -4,7 +4,8 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-// Leetcode 73: MEDIUM
+// LeetCode 73: MEDIUM
+// https://leetcode.com/problems/set-matrix-zeroes/
 
 // A simple solution that works great is use 2 hash sets to store the i'th and j'th indices.
 // we then iterate over both sets and mark those positions as 0.

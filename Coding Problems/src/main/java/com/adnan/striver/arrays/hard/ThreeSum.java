@@ -2,7 +2,8 @@ package com.adnan.striver.arrays.hard;
 
 import java.util.*;
 
-// Leetcode 15: MEDIUM
+// LeetCode 15: MEDIUM
+// https://leetcode.com/problems/3sum/
 
 // Approach is simple. We iterate over the array once hence handling one variable.
 // The other two variables are a left and right pointer. When i + left + right is

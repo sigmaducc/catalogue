@@ -1,6 +1,8 @@
 package com.adnan.striver.arrays.easy;
 
-// Leetcode 26: EASY
+// LeetCode 26: EASY
+// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
 // Use an auxiliary array and then keep filling it everytime you
 // encounter a number which is different from it's predecessor
 // Finally return the size of that array based on the k counter.

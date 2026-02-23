@@ -1,6 +1,7 @@
 package com.adnan.striver.arrays.medium;
 
-// Leetcode 53: MEDIUM
+// LeetCode 53: MEDIUM
+// https://leetcode.com/problems/maximum-subarray/
 
 // Using bruteforce approach we will easily get maxSum
 // But it will eventually timeout because it is O(n^2) approach.

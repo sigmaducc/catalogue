@@ -3,7 +3,8 @@ package com.adnan.striver.arrays.medium;
 import java.util.HashMap;
 import java.util.Map;
 
-// Leetcode 560: MEDIUM
+// LeetCode 560: MEDIUM
+// https://leetcode.com/problems/subarray-sum-equals-k/
 
 // Refer LongestSubarrayWithSumK before solving this.
 

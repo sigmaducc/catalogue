@@ -3,7 +3,8 @@ package com.adnan.striver.strings.easy;
 import java.util.HashMap;
 import java.util.Map;
 
-// Leetcode 205: EASY
+// LeetCode 205: EASY
+// https://leetcode.com/problems/isomorphic-strings/
 
 // In approach 1:
 // We use 2 hashmaps for bidirectional checks. Each hashmap

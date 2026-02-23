@@ -3,7 +3,8 @@ package com.adnan.striver.arrays.medium;
 import java.util.ArrayList;
 import java.util.List;
 
-// Leetcode 54: MEDIUM
+// LeetCode 54: MEDIUM
+// https://leetcode.com/problems/spiral-matrix/
 
 // The solution I came up with took 3-4hrs but it is kind of the best lol
 // I used only iterator to go through the walls.

@@ -1,6 +1,8 @@
 package com.adnan.striver.arrays.medium;
 
-// Leetcode 75: MEDIUM
+// LeetCode 75: MEDIUM
+// https://leetcode.com/problems/sort-colors/
+
 // Simple sort question. It was mentioned to sort it in-place without using
 // any sort library so went with quick-sort instead of merge sort.
 

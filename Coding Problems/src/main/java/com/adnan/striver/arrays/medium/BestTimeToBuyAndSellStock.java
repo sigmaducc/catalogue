@@ -1,6 +1,7 @@
 package com.adnan.striver.arrays.medium;
 
-// LEETCODE 121: EASY
+// LeetCode 121: EASY
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 
 // Approach 1: Try to use bruteforce method. For every price check
 // for future price and calculate profit. Future price will always be

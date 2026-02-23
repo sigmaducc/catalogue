@@ -1,6 +1,6 @@
 package com.adnan.striver.basics.easy;
 
-// Leetcode 9: (EASY)
+// LeetCode 9: (EASY)
 // https://leetcode.com/problems/palindrome-number/
 
 public class PalindromeNumber {

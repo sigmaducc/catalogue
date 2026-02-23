@@ -1,6 +1,6 @@
 package com.adnan.striver.basics.easy.fibonacci;
 
-// Leetcode: 509 (EASY)
+// LeetCode: 509 (EASY)
 // https://leetcode.com/problems/fibonacci-number/
 
 // Fib(0) = 0

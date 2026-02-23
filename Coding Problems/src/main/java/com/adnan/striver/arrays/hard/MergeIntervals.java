@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-// Leetcode 56: MEDIUM
+// LeetCode 56: MEDIUM
+// https://leetcode.com/problems/merge-intervals/
 
 // Approach: Overlap means whenever the start is before the end of prev interval.
 // The solution would become much simpler if we simply sort the array.
