@@ -4,6 +4,9 @@ package com.adnan.striver.binary_search.easy;
 // https://leetcode.com/problems/binary-search/
 
 public class BinarySearch {
+
+    // Time Complexity: O(log n)
+    // Space Complexity: O(1)
     public int search(int[] nums, int target) {
         int low = 0;
         int high = nums.length - 1;
