@@ -1,6 +1,6 @@
-package striver.binary_search.easy;
+package striver.binary_search.array_1d;
 
-import com.adnan.striver.binary_search.easy.BinarySearch;
+import com.adnan.striver.binary_search.array_1d.BinarySearch;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,4 +1,4 @@
-package com.adnan.striver.binary_search.easy;
+package com.adnan.striver.binary_search.array_1d;
 
 // LeetCode 704: EASY
 // https://leetcode.com/problems/binary-search/
