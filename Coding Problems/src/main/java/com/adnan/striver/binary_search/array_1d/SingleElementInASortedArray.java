@@ -23,6 +23,9 @@ package com.adnan.striver.binary_search.array_1d;
 // single element is in the left part so we move our high pointer.
 
 public class SingleElementInASortedArray {
+
+    // Time Complexity: O(log n)
+    // Space Complexity: O(1)
     public int singleNonDuplicate(int[] nums) {
         int n = nums.length;
         if(n == 1) return nums[0];

@@ -37,6 +37,9 @@ package com.adnan.striver.binary_search.array_1d;
 // is -ve so we move to left by moving high pointer.
 
 public class FindPeakElement {
+
+    // Time Complexity: O(log n)
+    // Space Complexity: O(1)
     public int findPeakElement(int[] nums) {
         int low = 0;
         int high = nums.length - 1;

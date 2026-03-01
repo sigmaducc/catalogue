@@ -10,6 +10,9 @@ package com.adnan.striver.binary_search.array_1d;
 // this one and move left while storing the pivot.
 
 public class FindMinimumInRotatedSortedArray {
+
+    // Time Complexity: O(log n)
+    // Space Complexity: O(1)
     public int findMin(int[] nums) {
         int pivot = -1;
         int lastEl = nums[nums.length - 1];

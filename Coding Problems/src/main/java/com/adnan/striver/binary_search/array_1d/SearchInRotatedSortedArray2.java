@@ -15,6 +15,9 @@ package com.adnan.striver.binary_search.array_1d;
 // If the target lies in that range we forget about the left half. If it doesn't we forget about the right half.
 
 public class SearchInRotatedSortedArray2 {
+
+    // Time Complexity: O(log n) or worst case O(n) when all elements are repeated
+    // Space Complexity: O(1)
     public boolean search(int[] nums, int target) {
         int low = 0;
         int high = nums.length - 1;
