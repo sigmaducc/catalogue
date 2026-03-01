@@ -3,7 +3,7 @@ package com.adnan.striver.arrays.medium;
 import java.util.ArrayList;
 import java.util.List;
 
-// Non leetcode question (but from striver sheet)
+// Non LeetCode question (but from striver sheet)
 
 public class LeadersInAnArray {
     public List<Integer> leaders(int[] nums) {

@@ -1,6 +1,6 @@
 package com.adnan.striver.basics.easy;
 
-// Non leetcode question (but from striver sheet)
+// Non LeetCode question (but from striver sheet)
 
 public class Factorial {
 

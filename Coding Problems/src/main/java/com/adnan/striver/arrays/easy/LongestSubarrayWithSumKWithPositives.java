@@ -12,16 +12,12 @@ public class LongestSubarrayWithSumKWithPositives {
         while(i <= nums.length - 1 && j <= nums.length - 1) {
             if(sum == k) {
                 max = Math.max(max, j - i);
-                sum -= nums[i];
-                sum += nums[j];
-                i++;
-                j++;
+                sum -= nums[i++];
+                sum += nums[j++];
             } else if(sum < k) {
-                sum += nums[j];
-                j++;
+                sum += nums[j++];
             } else if(sum > k) {
-                sum -= nums[i];
-                i++;
+                sum -= nums[i++];
             }
         }
 

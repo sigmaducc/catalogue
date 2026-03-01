@@ -12,7 +12,7 @@ import java.util.List;
 // The issue came with edge cases. Such as 1*1, M*1, 1*N, even/odd sized array.
 // I eventually handled the edge cases but it was time consuming.
 
-// The approach I found on leetcode is much simpler.
+// The approach I found on LeetCode is much simpler.
 // We keep 4 variables. left, right, top and bottom.
 // On each iteration we increment left and top and decrement
 // right and bottom more like a shrinking cage.

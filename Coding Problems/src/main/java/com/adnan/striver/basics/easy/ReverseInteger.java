@@ -1,7 +1,7 @@
 package com.adnan.striver.basics.easy;
 
 // LeetCode 7: (EASY)
-//  https://leetcode.com/problems/reverse-integer/
+// https://leetcode.com/problems/reverse-integer/
 
 // Using a simple math trick. Dividing a number by 10 gives non-zeroth place digits
 // of the number. And modulating a number by 10 gives the zeroth place digit

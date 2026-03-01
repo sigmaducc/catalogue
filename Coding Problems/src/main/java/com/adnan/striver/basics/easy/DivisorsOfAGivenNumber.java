@@ -3,7 +3,7 @@ package com.adnan.striver.basics.easy;
 import java.util.ArrayList;
 import java.util.List;
 
-// Non leetcode question (but from striver sheet)
+// Non LeetCode question (but from striver sheet)
 
 public class DivisorsOfAGivenNumber {
 

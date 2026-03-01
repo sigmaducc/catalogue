@@ -3,7 +3,7 @@ package com.adnan.striver.arrays.easy;
 import java.util.ArrayList;
 import java.util.List;
 
-// Non leetcode question (but from striver sheet)
+// Non LeetCode question (but from striver sheet)
 
 public class UnionOfTwoSortedArrays {
     public List<Integer> union(int[] arr1, int[] arr2) {

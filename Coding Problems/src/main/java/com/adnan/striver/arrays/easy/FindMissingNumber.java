@@ -2,7 +2,7 @@ package com.adnan.striver.arrays.easy;
 
 import java.util.Arrays;
 
-// Non leetcode question (but from striver sheet)
+// Non LeetCode question (but from striver sheet)
 
 public class FindMissingNumber {
 

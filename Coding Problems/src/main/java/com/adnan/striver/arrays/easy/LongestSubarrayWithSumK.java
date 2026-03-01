@@ -3,7 +3,7 @@ package com.adnan.striver.arrays.easy;
 import java.util.HashMap;
 import java.util.Map;
 
-// Non leetcode question (but from striver sheet)
+// Non LeetCode question (but from striver sheet)
 // DONE: Try sliding window for positive integers
 // Check LongestSubarrayWithSumKWithPositives
 
