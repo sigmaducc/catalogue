@@ -1,6 +1,6 @@
 package interviews.oa;
 
-import com.adnan.interviews.oa.CountBinarySubstrings;
+import com.adnan.interviews.jpmorgan.oa.CountBinarySubstrings;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,4 +1,4 @@
-package com.adnan.interviews.oa;
+package com.adnan.interviews.jpmorgan.oa;
 
 // JPMorgan Chase Cohort HackerRank question 1
 

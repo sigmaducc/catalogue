@@ -1,4 +1,4 @@
-package com.adnan.interviews.oa;
+package com.adnan.interviews.jpmorgan.oa;
 
 import java.util.Arrays;
 import java.util.List;

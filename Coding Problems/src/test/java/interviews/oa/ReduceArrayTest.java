@@ -1,6 +1,6 @@
 package interviews.oa;
 
-import com.adnan.interviews.oa.ReduceArray;
+import com.adnan.interviews.jpmorgan.oa.ReduceArray;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
