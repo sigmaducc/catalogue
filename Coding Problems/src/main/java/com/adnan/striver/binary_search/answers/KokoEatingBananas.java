@@ -21,6 +21,9 @@ package com.adnan.striver.binary_search.answers;
 
 
 public class KokoEatingBananas {
+
+    // Time Complexity: O(n * log max(piles))
+    // Space Complexity: O(1)
     public int minEatingSpeed(int[] piles, int h) {
         int low = 1;
         int high = Integer.MIN_VALUE;

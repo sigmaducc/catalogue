@@ -121,17 +121,6 @@ public class LongestSubarrayWithSumKTest {
     void test11() {
         int[] nums = {6, -2, 2, -8, 1, 7, 4, -10};
         int k = 0;
-        int expected = 5;
-
-        int result = new LongestSubarrayWithSumK().longestSubarray(nums, k);
-
-        assertEquals(expected, result);
-    }
-
-    @Test
-    void test12() {
-        int[] nums = {6, -2, 2, -8, 1, 7, 4, -10};
-        int k = 0;
         int expected = 8;
 
         int result = new LongestSubarrayWithSumK().longestSubarray(nums, k);
