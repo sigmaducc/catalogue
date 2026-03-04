@@ -1,35 +1,13 @@
 package com.adnan.design_patterns.observer_pattern.ecommerce_notify_me;
 
-import java.util.HashMap;
-import java.util.Map;
+public interface InventoryService {
 
-public class InventoryService {
-    Map<String, Product> productMap = new HashMap<>();
-    NotificationService notificationService;
+    void addProduct(Product p);
 
-    public InventoryService(NotificationService notificationService) {
-        this.notificationService = notificationService;
-    }
+    void subscribeForNotification(String productId, StockObserver o);
 
-    public void addProduct(Product p) {
-        this.productMap.put(p.getId(), p);
-    }
+    void unsubscribeForNotification(String productId, StockObserver o);
 
-    public void subscribeForNotification(String productId, StockObserver o) {
-        this.notificationService.subscribe(productId, o);
-    }
-
-    public void restock(String productId, int quantity) {
-        Product p = productMap.get(productId);
-
-        if(p != null) {
-            p.addStock(quantity);
-            System.out.println(p.getName() + " is restocked");
-
-            if(p.getStock() > 0) {
-                this.notificationService.notifySubscribers(p);
-            }
-        }
-    }
+    void restock(String productId, int quantity);
 
 }
