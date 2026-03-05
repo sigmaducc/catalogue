@@ -8,6 +8,9 @@ package com.adnan.striver.strings.medium;
 // and simply return it in the end.
 
 public class MaximumNestingDepthOfTheParentheses {
+
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
     public int maxDepth(String s) {
         int max = 0;
         int counter = 0;

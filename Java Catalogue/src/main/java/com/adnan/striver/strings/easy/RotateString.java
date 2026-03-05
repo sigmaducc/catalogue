@@ -15,6 +15,9 @@ package com.adnan.striver.strings.easy;
 // find that our j counter is equal to m that means we have found the substring.
 
 public class RotateString {
+
+    // Time Complexity: O((n+n) * m) ~ O(n * m)
+    // Space Complexity: O(1)
     public boolean rotateString(String s, String goal) {
         if(s.length() != goal.length()) return false;
 

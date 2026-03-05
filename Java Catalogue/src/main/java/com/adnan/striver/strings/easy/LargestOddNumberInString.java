@@ -9,6 +9,9 @@ package com.adnan.striver.strings.easy;
 // longest odd number.
 
 public class LargestOddNumberInString {
+
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
     public String largestOddNumber(String num) {
         for(int i = num.length() - 1; i >= 0; i--) {
             char c = num.charAt(i);

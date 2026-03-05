@@ -10,6 +10,9 @@ package com.adnan.striver.strings.medium;
 // keep your solution fast. Simply use a switch statement.
 
 public class RomanToInteger {
+
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
     public int romanToInt(String s) {
         int sum = roman2Int(s.charAt(s.length() - 1));
         for(int i = s.length() - 2; i >= 0; i--) {
