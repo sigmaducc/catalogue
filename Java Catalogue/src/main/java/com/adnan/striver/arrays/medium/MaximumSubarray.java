@@ -12,9 +12,27 @@ package com.adnan.striver.arrays.medium;
 // sliding window will probably be better. But I think Kadane's algorithm would still
 // shine in whole positive array of elements.
 
-// TODO: Separate Kadane's algorithm with printing solution
+// DONE: Separate Kadane's algorithm with printing solution
 
 public class MaximumSubarray {
+
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
+    public int maxSubArray(int[] nums) {
+        int maxSum = Integer.MIN_VALUE;
+
+        int sum = 0;
+        for(int i = 0; i <= nums.length - 1; i++) {
+            sum += nums[i];
+            maxSum = Math.max(maxSum, sum);
+
+            if(sum < 0) {
+                sum = 0;
+            }
+        }
+
+        return maxSum;
+    }
 
     // Time Complexity: O(n * n)
     // Space Complexity: O(1)
@@ -32,35 +50,33 @@ public class MaximumSubarray {
 //        return maxSum;
 //    }
 
-    // Time Complexity: O(n)
-    // Space Complexity: O(1)
-    public int maxSubArray(int[] nums) {
-        int maxSum = Integer.MIN_VALUE;
-
-        int sum = 0;
-        int start = 0;
-        int end = 0;
-        for(int i = 0; i <= nums.length - 1; i++) {
-            if(sum == 0) start = i;
-
-            sum += nums[i];
-
-            if(sum > maxSum) {
-                end = i;
-                maxSum = sum;
-            }
-
-            if(sum < 0) {
-                sum = 0;
-            }
-        }
-
-        System.out.print("nums: [");
-        for(int i = start; i <= end; i++) {
-            System.out.print(nums[i] + ", ");
-        }
-        System.out.println("]");
-
-        return maxSum;
-    }
+//    public int maxSubArray(int[] nums) {
+//        int maxSum = Integer.MIN_VALUE;
+//
+//        int sum = 0;
+//        int start = 0;
+//        int end = 0;
+//        for(int i = 0; i <= nums.length - 1; i++) {
+//            if(sum == 0) start = i;
+//
+//            sum += nums[i];
+//
+//            if(sum > maxSum) {
+//                end = i;
+//                maxSum = sum;
+//            }
+//
+//            if(sum < 0) {
+//                sum = 0;
+//            }
+//        }
+//
+//        System.out.print("nums: [");
+//        for(int i = start; i <= end; i++) {
+//            System.out.print(nums[i] + ", ");
+//        }
+//        System.out.println("]");
+//
+//        return maxSum;
+//    }
 }
