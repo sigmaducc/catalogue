@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MaximumNestingDepthOfTheParenthesesTest {
 
+    private final MaximumNestingDepthOfTheParentheses maximumNestingDepthOfTheParentheses = new MaximumNestingDepthOfTheParentheses();
+
     @Test
     void test1() {
         String s = "(1+(2*3)+((8)/4))+1";
         int output = 3;
 
-        int result = new MaximumNestingDepthOfTheParentheses().maxDepth(s);
+        int result = maximumNestingDepthOfTheParentheses.maxDepth(s);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class MaximumNestingDepthOfTheParenthesesTest {
         String s = "(1)+((2))+(((3)))";
         int output = 3;
 
-        int result = new MaximumNestingDepthOfTheParentheses().maxDepth(s);
+        int result = maximumNestingDepthOfTheParentheses.maxDepth(s);
 
         assertEquals(output, result);
     }

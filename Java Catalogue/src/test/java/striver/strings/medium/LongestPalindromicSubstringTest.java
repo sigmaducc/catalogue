@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LongestPalindromicSubstringTest {
 
+    private final LongestPalindromicSubstring longestPalindromicSubstring = new LongestPalindromicSubstring();
+
     @Test
     void test1() {
         String s = "babad";
         String output = "bab";
 
-        String result = new LongestPalindromicSubstring().longestPalindrome(s);
+        String result = longestPalindromicSubstring.longestPalindrome(s);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class LongestPalindromicSubstringTest {
         String s = "cbbd";
         String output = "bb";
 
-        String result = new LongestPalindromicSubstring().longestPalindrome(s);
+        String result = longestPalindromicSubstring.longestPalindrome(s);
 
         assertEquals(output, result);
     }
@@ -32,7 +34,7 @@ public class LongestPalindromicSubstringTest {
         String s = "abb";
         String output = "bb";
 
-        String result = new LongestPalindromicSubstring().longestPalindrome(s);
+        String result = longestPalindromicSubstring.longestPalindrome(s);
 
         assertEquals(output, result);
     }

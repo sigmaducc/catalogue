@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SortCharactersByFrequencyTest {
 
+    private final SortCharactersByFrequency sortCharactersByFrequency = new SortCharactersByFrequency();
+
     @Test
     void test1() {
         String s = "tree";
         String output = "eert";
 
-        String result = new SortCharactersByFrequency().frequencySort(s);
+        String result = sortCharactersByFrequency.frequencySort(s);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class SortCharactersByFrequencyTest {
         String s = "cccaaa";
         String output = "aaaccc";
 
-        String result = new SortCharactersByFrequency().frequencySort(s);
+        String result = sortCharactersByFrequency.frequencySort(s);
 
         assertEquals(output, result);
     }
@@ -32,7 +34,7 @@ public class SortCharactersByFrequencyTest {
         String s = "Aabb";
         String output = "bbAa";
 
-        String result = new SortCharactersByFrequency().frequencySort(s);
+        String result = sortCharactersByFrequency.frequencySort(s);
 
         assertEquals(output, result);
     }

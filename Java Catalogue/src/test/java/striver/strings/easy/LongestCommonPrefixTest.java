@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LongestCommonPrefixTest {
 
+    private final LongestCommonPrefix longestCommonPrefix = new LongestCommonPrefix();
+
     @Test
     void test1() {
         String[] strs = {"flower","flow","flight"};
         String output = "fl";
 
-        String result = new LongestCommonPrefix().longestCommonPrefix(strs);
+        String result = longestCommonPrefix.longestCommonPrefix(strs);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class LongestCommonPrefixTest {
         String[] strs = {"dog","racecar","car"};
         String output = "";
 
-        String result = new LongestCommonPrefix().longestCommonPrefix(strs);
+        String result = longestCommonPrefix.longestCommonPrefix(strs);
 
         assertEquals(output, result);
     }
@@ -32,7 +34,7 @@ public class LongestCommonPrefixTest {
         String[] strs = {"cir","car"};
         String output = "c";
 
-        String result = new LongestCommonPrefix().longestCommonPrefix(strs);
+        String result = longestCommonPrefix.longestCommonPrefix(strs);
 
         assertEquals(output, result);
     }

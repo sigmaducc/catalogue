@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ReverseWordsInAStringTest {
 
+    private final ReverseWordsInAString reverseWordsInAString = new ReverseWordsInAString();
+
     @Test
     void test1() {
         String s = "the  sky is blue";
         String output = "blue is sky the";
 
-        String result = new ReverseWordsInAString().reverseWords(s);
+        String result = reverseWordsInAString.reverseWords(s);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class ReverseWordsInAStringTest {
         String s = "  hello world  ";
         String output = "world hello";
 
-        String result = new ReverseWordsInAString().reverseWords(s);
+        String result = reverseWordsInAString.reverseWords(s);
 
         assertEquals(output, result);
     }
@@ -32,7 +34,7 @@ public class ReverseWordsInAStringTest {
         String s = "a good   example";
         String output = "example good a";
 
-        String result = new ReverseWordsInAString().reverseWords(s);
+        String result = reverseWordsInAString.reverseWords(s);
 
         assertEquals(output, result);
     }
@@ -42,7 +44,7 @@ public class ReverseWordsInAStringTest {
         String s = "the  sky";
         String output = "sky the";
 
-        String result = new ReverseWordsInAString().reverseWords(s);
+        String result = reverseWordsInAString.reverseWords(s);
 
         assertEquals(output, result);
     }
@@ -52,7 +54,7 @@ public class ReverseWordsInAStringTest {
         String s = "the sky is blue";
         String output = "blue is sky the";
 
-        String result = new ReverseWordsInAString().reverseWords(s);
+        String result = reverseWordsInAString.reverseWords(s);
 
         assertEquals(output, result);
     }

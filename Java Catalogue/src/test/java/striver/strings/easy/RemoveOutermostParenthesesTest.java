@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RemoveOutermostParenthesesTest {
 
+    private final RemoveOutermostParentheses removeOutermostParentheses = new RemoveOutermostParentheses();
+
     @Test
     void test1() {
         String s = "(()())(())";
         String output = "()()()";
 
-        String result = new RemoveOutermostParentheses().removeOuterParentheses(s);
+        String result = removeOutermostParentheses.removeOuterParentheses(s);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class RemoveOutermostParenthesesTest {
         String s = "(()())(())(()(()))";
         String output = "()()()()(())";
 
-        String result = new RemoveOutermostParentheses().removeOuterParentheses(s);
+        String result = removeOutermostParentheses.removeOuterParentheses(s);
 
         assertEquals(output, result);
     }
@@ -32,7 +34,7 @@ public class RemoveOutermostParenthesesTest {
         String s = "()()";
         String output = "";
 
-        String result = new RemoveOutermostParentheses().removeOuterParentheses(s);
+        String result = removeOutermostParentheses.removeOuterParentheses(s);
 
         assertEquals(output, result);
     }

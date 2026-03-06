@@ -8,12 +8,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class IsomorphicStringsTest {
 
+    private final IsomorphicStrings isomorphicStrings = new IsomorphicStrings();
+
     @Test
     void test1() {
         String s = "egg";
         String t = "add";
 
-        boolean result = new IsomorphicStrings().isIsomorphic(s, t);
+        boolean result = isomorphicStrings.isIsomorphic(s, t);
 
         assertTrue(result);
     }
@@ -23,7 +25,7 @@ public class IsomorphicStringsTest {
         String s = "paper";
         String t = "title";
 
-        boolean result = new IsomorphicStrings().isIsomorphic(s, t);
+        boolean result = isomorphicStrings.isIsomorphic(s, t);
 
         assertTrue(result);
     }
@@ -33,7 +35,7 @@ public class IsomorphicStringsTest {
         String s = "f11";
         String t = "b23";
 
-        boolean result = new IsomorphicStrings().isIsomorphic(s, t);
+        boolean result = isomorphicStrings.isIsomorphic(s, t);
 
         assertFalse(result);
     }
@@ -43,7 +45,7 @@ public class IsomorphicStringsTest {
         String s = "badc";
         String t = "baba";
 
-        boolean result = new IsomorphicStrings().isIsomorphic(s, t);
+        boolean result = isomorphicStrings.isIsomorphic(s, t);
 
         assertFalse(result);
     }
@@ -53,7 +55,7 @@ public class IsomorphicStringsTest {
         String s = "bbbaaaba";
         String t = "aaabbbba";
 
-        boolean result = new IsomorphicStrings().isIsomorphic(s, t);
+        boolean result = isomorphicStrings.isIsomorphic(s, t);
 
         assertFalse(result);
     }

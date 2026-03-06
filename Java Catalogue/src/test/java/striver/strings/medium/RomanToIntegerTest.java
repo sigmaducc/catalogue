@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RomanToIntegerTest {
 
+    private final RomanToInteger romanToInteger = new RomanToInteger();
+
     @Test
     void test1() {
         String s = "III";
         int output = 3;
 
-        int result = new RomanToInteger().romanToInt(s);
+        int result = romanToInteger.romanToInt(s);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class RomanToIntegerTest {
         String s = "LVIII";
         int output = 58;
 
-        int result = new RomanToInteger().romanToInt(s);
+        int result = romanToInteger.romanToInt(s);
 
         assertEquals(output, result);
     }
@@ -32,7 +34,7 @@ public class RomanToIntegerTest {
         String s = "II";
         int output = 2;
 
-        int result = new RomanToInteger().romanToInt(s);
+        int result = romanToInteger.romanToInt(s);
 
         assertEquals(output, result);
     }
@@ -42,7 +44,7 @@ public class RomanToIntegerTest {
         String s = "XII";
         int output = 12;
 
-        int result = new RomanToInteger().romanToInt(s);
+        int result = romanToInteger.romanToInt(s);
 
         assertEquals(output, result);
     }
@@ -52,7 +54,7 @@ public class RomanToIntegerTest {
         String s = "XXVII";
         int output = 27;
 
-        int result = new RomanToInteger().romanToInt(s);
+        int result = romanToInteger.romanToInt(s);
 
         assertEquals(output, result);
     }
@@ -62,7 +64,7 @@ public class RomanToIntegerTest {
         String s = "IV";
         int output = 4;
 
-        int result = new RomanToInteger().romanToInt(s);
+        int result = romanToInteger.romanToInt(s);
 
         assertEquals(output, result);
     }
@@ -72,7 +74,7 @@ public class RomanToIntegerTest {
         String s = "IX";
         int output = 9;
 
-        int result = new RomanToInteger().romanToInt(s);
+        int result = romanToInteger.romanToInt(s);
 
         assertEquals(output, result);
     }
@@ -82,7 +84,7 @@ public class RomanToIntegerTest {
         String s = "MCMXCIV";
         int output = 1994;
 
-        int result = new RomanToInteger().romanToInt(s);
+        int result = romanToInteger.romanToInt(s);
 
         assertEquals(output, result);
     }

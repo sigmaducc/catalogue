@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SumOfBeautyOfAllSubstringsTest {
 
+    private final SumOfBeautyOfAllSubstrings sumOfBeautyOfAllSubstrings = new SumOfBeautyOfAllSubstrings();
+
     @Test
     void test1() {
         String s = "aabcb";
         int output = 5;
 
-        int result = new SumOfBeautyOfAllSubstrings().beautySum(s);
+        int result = sumOfBeautyOfAllSubstrings.beautySum(s);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class SumOfBeautyOfAllSubstringsTest {
         String s = "aabcbaa";
         int output = 17;
 
-        int result = new SumOfBeautyOfAllSubstrings().beautySum(s);
+        int result = sumOfBeautyOfAllSubstrings.beautySum(s);
 
         assertEquals(output, result);
     }
@@ -32,7 +34,7 @@ public class SumOfBeautyOfAllSubstringsTest {
         String s = "xzvfsppsjfbxdwkqe";
         int output = 64;
 
-        int result = new SumOfBeautyOfAllSubstrings().beautySum(s);
+        int result = sumOfBeautyOfAllSubstrings.beautySum(s);
 
         assertEquals(output, result);
     }

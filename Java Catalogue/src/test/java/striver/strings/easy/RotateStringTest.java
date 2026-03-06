@@ -8,12 +8,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RotateStringTest {
 
+    private final RotateString rotateString = new RotateString();
+
     @Test
     void test1() {
         String s = "abcde";
         String goal = "cdeab";
 
-        boolean result = new RotateString().rotateString(s, goal);
+        boolean result = rotateString.rotateString(s, goal);
 
         assertTrue(result);
     }
@@ -23,7 +25,7 @@ public class RotateStringTest {
         String s = "abcde";
         String goal = "abced";
 
-        boolean result = new RotateString().rotateString(s, goal);
+        boolean result = rotateString.rotateString(s, goal);
 
         assertFalse(result);
     }
@@ -33,7 +35,7 @@ public class RotateStringTest {
         String s = "defdefdefabcabc";
         String goal = "defdefabcabcdef";
 
-        boolean result = new RotateString().rotateString(s, goal);
+        boolean result = rotateString.rotateString(s, goal);
 
         assertTrue(result);
     }

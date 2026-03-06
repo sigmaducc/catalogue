@@ -8,12 +8,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ValidAnagramTest {
 
+    private final ValidAnagram validAnagram = new ValidAnagram();
+
     @Test
     void test1() {
         String s = "anagram";
         String t = "nagaram";
 
-        boolean result = new ValidAnagram().isAnagram(s, t);
+        boolean result = validAnagram.isAnagram(s, t);
 
         assertTrue(result);
     }
@@ -23,7 +25,7 @@ public class ValidAnagramTest {
         String s = "rat";
         String t = "car";
 
-        boolean result = new ValidAnagram().isAnagram(s, t);
+        boolean result = validAnagram.isAnagram(s, t);
 
         assertFalse(result);
     }
