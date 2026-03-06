@@ -7,13 +7,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LongestSubarrayWithSumKTest {
 
+    private final LongestSubarrayWithSumK longestSubarrayWithSumK = new LongestSubarrayWithSumK();
+
     @Test
     void test1() {
         int[] nums = {1, 2, 3, 1, 1, 1, 1, 4, 2, 3};
         int k = 3;
         int output = 3;
 
-        int result = new LongestSubarrayWithSumK().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumK.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -24,7 +26,7 @@ public class LongestSubarrayWithSumKTest {
         int k = 15;
         int output = 4;
 
-        int result = new LongestSubarrayWithSumK().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumK.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -35,7 +37,7 @@ public class LongestSubarrayWithSumKTest {
         int k = 6;
         int output = 0;
 
-        int result = new LongestSubarrayWithSumK().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumK.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -46,7 +48,7 @@ public class LongestSubarrayWithSumKTest {
         int k = 4;
         int output = 4;
 
-        int result = new LongestSubarrayWithSumK().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumK.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -57,7 +59,7 @@ public class LongestSubarrayWithSumKTest {
         int k = 5;
         int output = 2;
 
-        int result = new LongestSubarrayWithSumK().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumK.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -68,7 +70,7 @@ public class LongestSubarrayWithSumKTest {
         int k = 1;
         int output = 3;
 
-        int result = new LongestSubarrayWithSumK().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumK.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -79,7 +81,7 @@ public class LongestSubarrayWithSumKTest {
         int k = 2;
         int output = 3;
 
-        int result = new LongestSubarrayWithSumK().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumK.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -90,7 +92,7 @@ public class LongestSubarrayWithSumKTest {
         int k = 4;
         int output = 0;
 
-        int result = new LongestSubarrayWithSumK().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumK.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -101,7 +103,7 @@ public class LongestSubarrayWithSumKTest {
         int k = 0;
         int output = 6;
 
-        int result = new LongestSubarrayWithSumK().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumK.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -112,7 +114,7 @@ public class LongestSubarrayWithSumKTest {
         int k = 0;
         int expected = 0;
 
-        int result = new LongestSubarrayWithSumK().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumK.longestSubarray(nums, k);
 
         assertEquals(expected, result);
     }
@@ -123,7 +125,7 @@ public class LongestSubarrayWithSumKTest {
         int k = 0;
         int expected = 8;
 
-        int result = new LongestSubarrayWithSumK().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumK.longestSubarray(nums, k);
 
         assertEquals(expected, result);
     }

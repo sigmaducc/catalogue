@@ -7,13 +7,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LongestSubarrayWithSumKWithPositivesTest {
 
+    private final LongestSubarrayWithSumKWithPositives longestSubarrayWithSumKWithPositives = new LongestSubarrayWithSumKWithPositives();
+
     @Test
     void test1() {
         int[] nums = {10, 5, 2, 7, 1, 9};
         int k = 15;
         int output = 4;
 
-        int result = new LongestSubarrayWithSumKWithPositives().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumKWithPositives.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -24,7 +26,7 @@ public class LongestSubarrayWithSumKWithPositivesTest {
         int k = 7;
         int output = 2;
 
-        int result = new LongestSubarrayWithSumKWithPositives().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumKWithPositives.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -35,7 +37,7 @@ public class LongestSubarrayWithSumKWithPositivesTest {
         int k = 3;
         int output = 3;
 
-        int result = new LongestSubarrayWithSumKWithPositives().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumKWithPositives.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -46,7 +48,7 @@ public class LongestSubarrayWithSumKWithPositivesTest {
         int k = 6;
         int output = 3;
 
-        int result = new LongestSubarrayWithSumKWithPositives().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumKWithPositives.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -57,7 +59,7 @@ public class LongestSubarrayWithSumKWithPositivesTest {
         int k = 4;
         int output = 4;
 
-        int result = new LongestSubarrayWithSumKWithPositives().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumKWithPositives.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }
@@ -68,7 +70,7 @@ public class LongestSubarrayWithSumKWithPositivesTest {
         int k = 6;
         int output = 0;
 
-        int result = new LongestSubarrayWithSumKWithPositives().longestSubarray(nums, k);
+        int result = longestSubarrayWithSumKWithPositives.longestSubarray(nums, k);
 
         assertEquals(output, result);
     }

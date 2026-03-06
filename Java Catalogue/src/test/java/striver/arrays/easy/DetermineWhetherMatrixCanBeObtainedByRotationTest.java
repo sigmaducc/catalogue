@@ -8,12 +8,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class DetermineWhetherMatrixCanBeObtainedByRotationTest {
 
+    private final DetermineWhetherMatrixCanBeObtainedByRotation determineWhetherMatrixCanBeObtainedByRotation = new DetermineWhetherMatrixCanBeObtainedByRotation();
+
     @Test
     void test1() {
         int[][] matrix = {{0,1},{1,0}};
         int[][] target = {{1,0},{0,1}};
 
-        boolean result = new DetermineWhetherMatrixCanBeObtainedByRotation().findRotation(matrix, target);
+        boolean result = determineWhetherMatrixCanBeObtainedByRotation.findRotation(matrix, target);
 
         assertTrue(result);
     }
@@ -23,7 +25,7 @@ public class DetermineWhetherMatrixCanBeObtainedByRotationTest {
         int[][] matrix = {{0,1},{1,1}};
         int[][] target = {{1,0},{0,1}};
 
-        boolean result = new DetermineWhetherMatrixCanBeObtainedByRotation().findRotation(matrix, target);
+        boolean result = determineWhetherMatrixCanBeObtainedByRotation.findRotation(matrix, target);
 
         assertFalse(result);
     }
@@ -33,7 +35,7 @@ public class DetermineWhetherMatrixCanBeObtainedByRotationTest {
         int[][] matrix = {{0,0,0},{0,1,0},{1,1,1}};
         int[][] target = {{1,1,1},{0,1,0},{0,0,0}};
 
-        boolean result = new DetermineWhetherMatrixCanBeObtainedByRotation().findRotation(matrix, target);
+        boolean result = determineWhetherMatrixCanBeObtainedByRotation.findRotation(matrix, target);
 
         assertTrue(result);
     }

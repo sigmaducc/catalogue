@@ -10,6 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
 public class PascalTriangleTest {
 
+    private final PascalTriangle pascalTriangle = new PascalTriangle();
+
     @Test
     void test1() {
         int numRows = 5;
@@ -21,7 +23,7 @@ public class PascalTriangleTest {
             List.of(1, 4, 6, 4, 1)
         ));
 
-        List<List<Integer>> result = new PascalTriangle().generate(numRows);
+        List<List<Integer>> result = pascalTriangle.generate(numRows);
 
         assertIterableEquals(output, result);
     }
@@ -33,7 +35,7 @@ public class PascalTriangleTest {
             List.of(1)
         ));
 
-        List<List<Integer>> result = new PascalTriangle().generate(numRows);
+        List<List<Integer>> result = pascalTriangle.generate(numRows);
 
         assertIterableEquals(output, result);
     }
@@ -47,7 +49,7 @@ public class PascalTriangleTest {
                 List.of(1, 2, 1)
         ));
 
-        List<List<Integer>> result = new PascalTriangle().generate(numRows);
+        List<List<Integer>> result = pascalTriangle.generate(numRows);
 
         assertIterableEquals(output, result);
     }

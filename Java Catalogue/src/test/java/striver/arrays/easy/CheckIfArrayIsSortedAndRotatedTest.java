@@ -8,11 +8,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CheckIfArrayIsSortedAndRotatedTest {
 
+    private final CheckIfArrayIsSortedAndRotated checkIfArrayIsSortedAndRotated = new CheckIfArrayIsSortedAndRotated();
+
     @Test
     void testIsArraySortedAndRotatedForTrue1() {
         int[] arr = {3, 4, 5, 1, 2};
 
-        boolean isArraySortedAndRotated = new CheckIfArrayIsSortedAndRotated().isArraySortedAndRotated(arr);
+        boolean isArraySortedAndRotated = checkIfArrayIsSortedAndRotated.isArraySortedAndRotated(arr);
 
         assertTrue(isArraySortedAndRotated);
     }
@@ -21,7 +23,7 @@ public class CheckIfArrayIsSortedAndRotatedTest {
     void testIsArraySortedAndRotatedForTrue2() {
         int[] arr = {1,2,3};
 
-        boolean isArraySortedAndRotated = new CheckIfArrayIsSortedAndRotated().isArraySortedAndRotated(arr);
+        boolean isArraySortedAndRotated = checkIfArrayIsSortedAndRotated.isArraySortedAndRotated(arr);
 
         assertTrue(isArraySortedAndRotated);
     }
@@ -30,7 +32,7 @@ public class CheckIfArrayIsSortedAndRotatedTest {
     void testIsArraySortedAndRotatedForFalse() {
         int[] arr = {2, 1, 3, 4};
 
-        boolean isArraySortedAndRotated = new CheckIfArrayIsSortedAndRotated().isArraySortedAndRotated(arr);
+        boolean isArraySortedAndRotated = checkIfArrayIsSortedAndRotated.isArraySortedAndRotated(arr);
 
         assertFalse(isArraySortedAndRotated);
     }

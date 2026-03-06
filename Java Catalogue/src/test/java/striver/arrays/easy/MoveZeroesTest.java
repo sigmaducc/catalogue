@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class MoveZeroesTest {
 
+    private final MoveZeroes moveZeroes = new MoveZeroes();
+
     @Test
     void test1() {
         int[] nums = {0,1,0,3,12};
         int[] output = {1,3,12,0,0};
 
-        new MoveZeroes().moveZeroes(nums);
+        moveZeroes.moveZeroes(nums);
 
         assertArrayEquals(output, nums);
     }
@@ -22,7 +24,7 @@ public class MoveZeroesTest {
         int[] nums = {0};
         int[] output = {0};
 
-        new MoveZeroes().moveZeroes(nums);
+        moveZeroes.moveZeroes(nums);
 
         assertArrayEquals(output, nums);
     }
@@ -32,7 +34,7 @@ public class MoveZeroesTest {
         int[] nums = {1,0};
         int[] output = {1,0};
 
-        new MoveZeroes().moveZeroes(nums);
+        moveZeroes.moveZeroes(nums);
 
         assertArrayEquals(output, nums);
     }
@@ -42,7 +44,7 @@ public class MoveZeroesTest {
         int[] nums = {1,0,1};
         int[] output = {1,1,0};
 
-        new MoveZeroes().moveZeroes(nums);
+        moveZeroes.moveZeroes(nums);
 
         assertArrayEquals(output, nums);
     }

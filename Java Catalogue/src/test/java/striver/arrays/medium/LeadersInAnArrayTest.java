@@ -11,12 +11,14 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class LeadersInAnArrayTest {
 
+    private final LeadersInAnArray leadersInAnArray = new LeadersInAnArray();
+
     @Test
     void test1() {
         int[] nums = {1, 2, 5, 3, 1, 2};
         List<Integer> output = new ArrayList<>(Arrays.asList(5, 3, 2));
 
-        List<Integer> result = new LeadersInAnArray().leaders(nums);
+        List<Integer> result = leadersInAnArray.leaders(nums);
 
         assertArrayEquals(output.toArray(), result.toArray());
     }
@@ -26,7 +28,7 @@ public class LeadersInAnArrayTest {
         int[] nums = {-3, 4, 5, 1, -4, -5};
         List<Integer> output = new ArrayList<>(Arrays.asList(5, 1, -4, -5));
 
-        List<Integer> result = new LeadersInAnArray().leaders(nums);
+        List<Integer> result = leadersInAnArray.leaders(nums);
 
         assertArrayEquals(output.toArray(), result.toArray());
     }
@@ -36,7 +38,7 @@ public class LeadersInAnArrayTest {
         int[] nums = {-3, 4, 5, 1, -30, -10};
         List<Integer> output = new ArrayList<>(Arrays.asList(5, 1, -10));
 
-        List<Integer> result = new LeadersInAnArray().leaders(nums);
+        List<Integer> result = leadersInAnArray.leaders(nums);
 
         assertArrayEquals(output.toArray(), result.toArray());
     }
@@ -46,7 +48,7 @@ public class LeadersInAnArrayTest {
         int[] nums = {1, 2, 5, 3, 1, 4};
         List<Integer> output = new ArrayList<>(Arrays.asList(5, 4));
 
-        List<Integer> result = new LeadersInAnArray().leaders(nums);
+        List<Integer> result = leadersInAnArray.leaders(nums);
 
         assertArrayEquals(output.toArray(), result.toArray());
     }

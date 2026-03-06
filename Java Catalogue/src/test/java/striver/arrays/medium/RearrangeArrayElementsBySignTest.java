@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class RearrangeArrayElementsBySignTest {
 
+    private final RearrangeArrayElementsBySign rearrangeArrayElementsBySign = new RearrangeArrayElementsBySign();
+
     @Test
     void testRearrangeArrayElementsBySign1() {
         int[] nums = {3,1,-2,-5,2,-4};
         int[] output = {3,-2,1,-5,2,-4};
 
-        int[] result = new RearrangeArrayElementsBySign().rearrangeArray(nums);
+        int[] result = rearrangeArrayElementsBySign.rearrangeArray(nums);
 
         assertArrayEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class RearrangeArrayElementsBySignTest {
         int[] nums = {-1,1};
         int[] output = {1,-1};
 
-        int[] result = new RearrangeArrayElementsBySign().rearrangeArray(nums);
+        int[] result = rearrangeArrayElementsBySign.rearrangeArray(nums);
 
         assertArrayEquals(output, result);
     }

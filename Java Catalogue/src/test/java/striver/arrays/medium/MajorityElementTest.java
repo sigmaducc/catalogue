@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MajorityElementTest {
 
+    private final MajorityElement majorityElement = new MajorityElement();
+
     @Test
     void testMajorityElement1() {
         int[] nums = {3,3,4};
         int output = 3;
 
-        int result = new MajorityElement().majorityElement(nums);
+        int result = majorityElement.majorityElement(nums);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class MajorityElementTest {
         int[] nums = {2,2,1,1,1,2,2};
         int output = 2;
 
-        int result = new MajorityElement().majorityElement(nums);
+        int result = majorityElement.majorityElement(nums);
 
         assertEquals(output, result);
     }

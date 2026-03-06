@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FindMissingNumberTest {
 
+    private final FindMissingNumber findMissingNumber = new FindMissingNumber();
+
     @Test
     void test1() {
         int[] arr = {8, 2, 4, 5, 3, 7, 1};
         int output = 6;
 
-        int result = new FindMissingNumber().missingNum(arr);
+        int result = findMissingNumber.missingNum(arr);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class FindMissingNumberTest {
         int[] arr = {1, 2, 3, 5};
         int output = 4;
 
-        int result = new FindMissingNumber().missingNum(arr);
+        int result = findMissingNumber.missingNum(arr);
 
         assertEquals(output, result);
     }

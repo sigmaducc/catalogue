@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class MergeSortedArrayTest {
 
+    private final MergeSortedArray mergeSortedArray = new MergeSortedArray();
+
     @Test
     void test1() {
         int[] nums1 = {1,2,3,0,0,0};
@@ -16,7 +18,7 @@ public class MergeSortedArrayTest {
 
         int[] output = {1,2,2,3,5,6};
 
-        new MergeSortedArray().merge(nums1, m, nums2, n);
+        mergeSortedArray.merge(nums1, m, nums2, n);
 
         assertArrayEquals(output, nums1);
     }
@@ -30,7 +32,7 @@ public class MergeSortedArrayTest {
 
         int[] output = {1};
 
-        new MergeSortedArray().merge(nums1, m, nums2, n);
+        mergeSortedArray.merge(nums1, m, nums2, n);
 
         assertArrayEquals(output, nums1);
     }
@@ -44,7 +46,7 @@ public class MergeSortedArrayTest {
 
         int[] output = {1};
 
-        new MergeSortedArray().merge(nums1, m, nums2, n);
+        mergeSortedArray.merge(nums1, m, nums2, n);
 
         assertArrayEquals(output, nums1);
     }
@@ -58,7 +60,7 @@ public class MergeSortedArrayTest {
 
         int[] output = {1, 2, 3, 4, 5, 6};
 
-        new MergeSortedArray().merge(nums1, m, nums2, n);
+        mergeSortedArray.merge(nums1, m, nums2, n);
 
         assertArrayEquals(output, nums1);
     }
@@ -72,7 +74,7 @@ public class MergeSortedArrayTest {
 
         int[] output = {1, 2, 3, 4, 5, 6};
 
-        new MergeSortedArray().merge(nums1, m, nums2, n);
+        mergeSortedArray.merge(nums1, m, nums2, n);
 
         assertArrayEquals(output, nums1);
     }
@@ -86,7 +88,7 @@ public class MergeSortedArrayTest {
 
         int[] output = {2,2,2,2,3,3};
 
-        new MergeSortedArray().merge(nums1, m, nums2, n);
+        mergeSortedArray.merge(nums1, m, nums2, n);
 
         assertArrayEquals(output, nums1);
     }
@@ -100,7 +102,7 @@ public class MergeSortedArrayTest {
 
         int[] output = {1, 2, 3, 4, 5};
 
-        new MergeSortedArray().merge(nums1, m, nums2, n);
+        mergeSortedArray.merge(nums1, m, nums2, n);
 
         assertArrayEquals(output, nums1);
     }
@@ -114,7 +116,7 @@ public class MergeSortedArrayTest {
 
         int[] output = {1, 2, 3, 4, 5, 6};
 
-        new MergeSortedArray().merge(nums1, m, nums2, n);
+        mergeSortedArray.merge(nums1, m, nums2, n);
 
         assertArrayEquals(output, nums1);
     }

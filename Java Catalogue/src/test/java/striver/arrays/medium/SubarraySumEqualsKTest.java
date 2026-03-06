@@ -7,13 +7,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SubarraySumEqualsKTest {
 
+    private final SubarraySumEqualsK subarraySumEqualsK = new SubarraySumEqualsK();
+
     @Test
     void test1() {
         int[] nums = {1,1,1};
         int k = 2;
         int output = 2;
 
-        int result = new SubarraySumEqualsK().subarraySum(nums, k);
+        int result = subarraySumEqualsK.subarraySum(nums, k);
 
         assertEquals(output, result);
     }
@@ -24,7 +26,7 @@ public class SubarraySumEqualsKTest {
         int k = 3;
         int output = 2;
 
-        int result = new SubarraySumEqualsK().subarraySum(nums, k);
+        int result = subarraySumEqualsK.subarraySum(nums, k);
 
         assertEquals(output, result);
     }
@@ -35,7 +37,7 @@ public class SubarraySumEqualsKTest {
         int k = 3;
         int output = 3;
 
-        int result = new SubarraySumEqualsK().subarraySum(nums, k);
+        int result = subarraySumEqualsK.subarraySum(nums, k);
 
         assertEquals(output, result);
     }

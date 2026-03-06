@@ -7,13 +7,15 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class InsertIntervalTest {
 
+    private final InsertInterval insertInterval = new InsertInterval();
+
     @Test
     void test1() {
         int[][] intervals = {{1,3},{6,9}};
         int[] newInterval = {2,5};
         int[][] output = {{1,5},{6,9}};
 
-        int[][] result = new InsertInterval().insert(intervals, newInterval);
+        int[][] result = insertInterval.insert(intervals, newInterval);
 
         assertArrayEquals(output, result);
     }
@@ -24,7 +26,7 @@ public class InsertIntervalTest {
         int[] newInterval = {4,8};
         int[][] output = {{1,2},{3,10},{12,16}};
 
-        int[][] result = new InsertInterval().insert(intervals, newInterval);
+        int[][] result = insertInterval.insert(intervals, newInterval);
 
         assertArrayEquals(output, result);
     }
@@ -35,7 +37,7 @@ public class InsertIntervalTest {
         int[] newInterval = {5,7};
         int[][] output = {{5,7}};
 
-        int[][] result = new InsertInterval().insert(intervals, newInterval);
+        int[][] result = insertInterval.insert(intervals, newInterval);
 
         assertArrayEquals(output, result);
     }
@@ -46,7 +48,7 @@ public class InsertIntervalTest {
         int[] newInterval = {0,3};
         int[][] output = {{0,5}};
 
-        int[][] result = new InsertInterval().insert(intervals, newInterval);
+        int[][] result = insertInterval.insert(intervals, newInterval);
 
         assertArrayEquals(output, result);
     }
@@ -57,7 +59,7 @@ public class InsertIntervalTest {
         int[] newInterval = {0,6};
         int[][] output = {{0,7}};
 
-        int[][] result = new InsertInterval().insert(intervals, newInterval);
+        int[][] result = insertInterval.insert(intervals, newInterval);
 
         assertArrayEquals(output, result);
     }
@@ -68,7 +70,7 @@ public class InsertIntervalTest {
         int[] newInterval = {0,0};
         int[][] output = {{0,0},{1,5}};
 
-        int[][] result = new InsertInterval().insert(intervals, newInterval);
+        int[][] result = insertInterval.insert(intervals, newInterval);
 
         assertArrayEquals(output, result);
     }

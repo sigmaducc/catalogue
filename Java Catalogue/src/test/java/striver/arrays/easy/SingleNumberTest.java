@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SingleNumberTest {
 
+    private final SingleNumber singleNumber = new SingleNumber();
+
     @Test
     void test1() {
         int[] nums = {2,2,1};
         int output = 1;
 
-        int result = new SingleNumber().singleNumber(nums);
+        int result = singleNumber.singleNumber(nums);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class SingleNumberTest {
         int[] nums = {4,1,2,1,2};
         int output = 4;
 
-        int result = new SingleNumber().singleNumber(nums);
+        int result = singleNumber.singleNumber(nums);
 
         assertEquals(output, result);
     }
@@ -32,7 +34,7 @@ public class SingleNumberTest {
         int[] nums = {1};
         int output = 1;
 
-        int result = new SingleNumber().singleNumber(nums);
+        int result = singleNumber.singleNumber(nums);
 
         assertEquals(output, result);
     }

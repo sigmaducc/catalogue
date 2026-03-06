@@ -11,6 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
 public class ThreeSumTest {
 
+    private final ThreeSum threeSum = new ThreeSum();
+
     @Test
     void test1() {
         int[] nums = {-1,0,1,2,-1,-4};
@@ -20,7 +22,7 @@ public class ThreeSumTest {
             List.of(-1,0,1)
         ));
 
-        List<List<Integer>> result = new ThreeSum().threeSum(nums);
+        List<List<Integer>> result = threeSum.threeSum(nums);
 
         assertIterableEquals(output, result);
     }
@@ -31,7 +33,7 @@ public class ThreeSumTest {
 
         List<List<Integer>> output = new ArrayList<>();
 
-        List<List<Integer>> result = new ThreeSum().threeSum(nums);
+        List<List<Integer>> result = threeSum.threeSum(nums);
 
         assertIterableEquals(output, result);
     }
@@ -44,7 +46,7 @@ public class ThreeSumTest {
             List.of(0,0,0)
         ));
 
-        List<List<Integer>> result = new ThreeSum().threeSum(nums);
+        List<List<Integer>> result = threeSum.threeSum(nums);
 
         assertIterableEquals(output, result);
     }
@@ -60,7 +62,7 @@ public class ThreeSumTest {
 
         output.sort(Comparator.comparing(list -> list.get(0)));
 
-        List<List<Integer>> result = new ThreeSum().threeSum(nums);
+        List<List<Integer>> result = threeSum.threeSum(nums);
         result.sort(Comparator.comparing(list -> list.get(0)));
 
         assertIterableEquals(output, result);
@@ -74,7 +76,7 @@ public class ThreeSumTest {
                 List.of(-1,0,1)
         ));
 
-        List<List<Integer>> result = new ThreeSum().threeSum(nums);
+        List<List<Integer>> result = threeSum.threeSum(nums);
 
         assertIterableEquals(output, result);
     }

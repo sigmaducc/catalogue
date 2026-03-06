@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SecondLargestElementTest {
 
+    private final SecondLargestElement secondLargestElement = new SecondLargestElement();
+
     @Test
     void test1() {
         int[] nums = {8, 8, 7, 6, 5};
         int output = 7;
 
-        int result = new SecondLargestElement().secondLargestElement(nums);
+        int result = secondLargestElement.secondLargestElement(nums);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class SecondLargestElementTest {
         int[] nums = {10, 10, 10, 10, 10};
         int output = -1;
 
-        int result = new SecondLargestElement().secondLargestElement(nums);
+        int result = secondLargestElement.secondLargestElement(nums);
 
         assertEquals(output, result);
     }
@@ -32,7 +34,7 @@ public class SecondLargestElementTest {
         int[] nums = {7, 7, 2, 2, 10, 10, 10};
         int output = 7;
 
-        int result = new SecondLargestElement().secondLargestElement(nums);
+        int result = secondLargestElement.secondLargestElement(nums);
 
         assertEquals(output, result);
     }

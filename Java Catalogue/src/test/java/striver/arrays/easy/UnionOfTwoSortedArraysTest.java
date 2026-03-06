@@ -11,6 +11,8 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class UnionOfTwoSortedArraysTest {
 
+    private final UnionOfTwoSortedArrays unionOfTwoSortedArrays = new UnionOfTwoSortedArrays();
+
     @Test
     void test1() {
         int[] arr1 = {1,2,3,4,5};
@@ -18,7 +20,7 @@ public class UnionOfTwoSortedArraysTest {
 
         List<Integer> output = new ArrayList<>(Arrays.asList(1,2,3,4,5));
 
-        List<Integer> result = new UnionOfTwoSortedArrays().union(arr1, arr2);
+        List<Integer> result = unionOfTwoSortedArrays.union(arr1, arr2);
 
         assertArrayEquals(output.toArray(), result.toArray());
     }
@@ -30,7 +32,7 @@ public class UnionOfTwoSortedArraysTest {
 
         List<Integer> output = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8,9,10,11,12));
 
-        List<Integer> result = new UnionOfTwoSortedArrays().union(arr1, arr2);
+        List<Integer> result = unionOfTwoSortedArrays.union(arr1, arr2);
 
         assertArrayEquals(output.toArray(), result.toArray());
     }

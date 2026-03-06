@@ -7,11 +7,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class RemoveDuplicatesFromSortedArrayTest {
 
+    private final RemoveDuplicatesFromSortedArray removeDuplicatesFromSortedArray = new RemoveDuplicatesFromSortedArray();
+
     @Test
     void testRemoveDuplicatesFromSortedArray1() {
         int[] nums = {1,1,2};
 
-        int result = new RemoveDuplicatesFromSortedArray().removeDuplicates(nums);
+        int result = removeDuplicatesFromSortedArray.removeDuplicates(nums);
 
         assertEquals(2, result);
     }
@@ -20,7 +22,7 @@ public class RemoveDuplicatesFromSortedArrayTest {
     void testRemoveDuplicatesFromSortedArray2() {
         int[] nums = {0,0,1,1,1,2,2,3,3,4};
 
-        int result = new RemoveDuplicatesFromSortedArray().removeDuplicates(nums);
+        int result = removeDuplicatesFromSortedArray.removeDuplicates(nums);
 
         assertEquals(5, result);
     }

@@ -10,6 +10,8 @@ import static org.junit.jupiter.api.Assertions.assertIterableEquals;
 
 public class FourSumTest {
 
+    private final FourSum fourSum = new FourSum();
+
     @Test
     void test1() {
         int[] nums = {1,0,-1,0,-2,2};
@@ -23,7 +25,7 @@ public class FourSumTest {
             )
         );
 
-        List<List<Integer>> result = new FourSum().fourSum(nums, target);
+        List<List<Integer>> result = fourSum.fourSum(nums, target);
 
         assertIterableEquals(output, result);
     }
@@ -39,7 +41,7 @@ public class FourSumTest {
             )
         );
 
-        List<List<Integer>> result = new FourSum().fourSum(nums, target);
+        List<List<Integer>> result = fourSum.fourSum(nums, target);
 
         assertIterableEquals(output, result);
     }
@@ -51,7 +53,7 @@ public class FourSumTest {
 
         List<List<Integer>> output = new ArrayList<>();
 
-        List<List<Integer>> result = new FourSum().fourSum(nums, target);
+        List<List<Integer>> result = fourSum.fourSum(nums, target);
 
         assertIterableEquals(output, result);
     }
