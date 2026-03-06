@@ -5,7 +5,7 @@ import java.util.List;
 
 public class RadixSort {
 
-    public void radixSort(int[] nums) {
+    public void sort(int[] nums) {
         int  maxDigits = Integer.MIN_VALUE;
 
         for(int i = 0; i <= nums.length - 1; i++) {

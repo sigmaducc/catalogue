@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FindGCDOfTwoNumbersTest {
 
+    private final FindGCDOfTwoNumbers findGCDOfTwoNumbers = new FindGCDOfTwoNumbers();
+
     @Test
     void test1() {
         int n1 = 9;
@@ -14,7 +16,7 @@ public class FindGCDOfTwoNumbersTest {
 
         int output = 3;
 
-        int result = new FindGCDOfTwoNumbers().gcd(n1, n2);
+        int result = findGCDOfTwoNumbers.gcd(n1, n2);
 
         assertEquals(output, result);
     }
@@ -26,7 +28,7 @@ public class FindGCDOfTwoNumbersTest {
 
         int output = 5;
 
-        int result = new FindGCDOfTwoNumbers().gcd(n1, n2);
+        int result = findGCDOfTwoNumbers.gcd(n1, n2);
 
         assertEquals(output, result);
     }
@@ -38,7 +40,7 @@ public class FindGCDOfTwoNumbersTest {
 
         int output = 6;
 
-        int result = new FindGCDOfTwoNumbers().gcd(n1, n2);
+        int result = findGCDOfTwoNumbers.gcd(n1, n2);
 
         assertEquals(output, result);
     }
@@ -50,7 +52,7 @@ public class FindGCDOfTwoNumbersTest {
 
         int output = 12;
 
-        int result = new FindGCDOfTwoNumbers().gcd(n1, n2);
+        int result = findGCDOfTwoNumbers.gcd(n1, n2);
 
         assertEquals(output, result);
     }
@@ -62,7 +64,7 @@ public class FindGCDOfTwoNumbersTest {
 
         int output = 2;
 
-        int result = new FindGCDOfTwoNumbers().gcd(n1, n2);
+        int result = findGCDOfTwoNumbers.gcd(n1, n2);
 
         assertEquals(output, result);
     }

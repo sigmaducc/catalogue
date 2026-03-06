@@ -8,11 +8,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CheckIfANumberIsPrimeOrNotTest {
 
+    private final CheckIfANumberIsPrimeOrNot checkIfANumberIsPrimeOrNot = new CheckIfANumberIsPrimeOrNot();
+
     @Test
     void test1() {
         int n = 2;
 
-        boolean result = new CheckIfANumberIsPrimeOrNot().isPrime(n);
+        boolean result = checkIfANumberIsPrimeOrNot.isPrime(n);
 
         assertTrue(result);
     }
@@ -21,7 +23,7 @@ public class CheckIfANumberIsPrimeOrNotTest {
     void test2() {
         int n = 10;
 
-        boolean result = new CheckIfANumberIsPrimeOrNot().isPrime(n);
+        boolean result = checkIfANumberIsPrimeOrNot.isPrime(n);
 
         assertFalse(result);
     }
@@ -30,7 +32,7 @@ public class CheckIfANumberIsPrimeOrNotTest {
     void test3() {
         int n = 29;
 
-        boolean result = new CheckIfANumberIsPrimeOrNot().isPrime(n);
+        boolean result = checkIfANumberIsPrimeOrNot.isPrime(n);
 
         assertTrue(result);
     }
@@ -39,7 +41,7 @@ public class CheckIfANumberIsPrimeOrNotTest {
     void test4() {
         int n = 11;
 
-        boolean result = new CheckIfANumberIsPrimeOrNot().isPrime(n);
+        boolean result = checkIfANumberIsPrimeOrNot.isPrime(n);
 
         assertTrue(result);
     }
@@ -48,7 +50,7 @@ public class CheckIfANumberIsPrimeOrNotTest {
     void test5() {
         int n = 15;
 
-        boolean result = new CheckIfANumberIsPrimeOrNot().isPrime(n);
+        boolean result = checkIfANumberIsPrimeOrNot.isPrime(n);
 
         assertFalse(result);
     }
@@ -57,7 +59,7 @@ public class CheckIfANumberIsPrimeOrNotTest {
     void test6() {
         int n = 35;
 
-        boolean result = new CheckIfANumberIsPrimeOrNot().isPrime(n);
+        boolean result = checkIfANumberIsPrimeOrNot.isPrime(n);
 
         assertFalse(result);
     }
@@ -66,7 +68,7 @@ public class CheckIfANumberIsPrimeOrNotTest {
     void test7() {
         int n = 417;
 
-        boolean result = new CheckIfANumberIsPrimeOrNot().isPrime(n);
+        boolean result = checkIfANumberIsPrimeOrNot.isPrime(n);
 
         assertFalse(result);
     }
@@ -75,7 +77,7 @@ public class CheckIfANumberIsPrimeOrNotTest {
     void test8() {
         int n = 55_409_243;
 
-        boolean result = new CheckIfANumberIsPrimeOrNot().isPrime(n);
+        boolean result = checkIfANumberIsPrimeOrNot.isPrime(n);
 
         assertFalse(result);
     }

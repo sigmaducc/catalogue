@@ -8,10 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class ValidPalindromeTest {
 
+    private final ValidPalindrome validPalindrome = new ValidPalindrome();
+
     @Test
     void testValidPalindrome1() {
         String str = "A man, a plan, a canal: Panama";
-        boolean result = new ValidPalindrome().isPalindrome(str);
+        boolean result = validPalindrome.isPalindrome(str);
 
         assertTrue(result);
     }
@@ -19,7 +21,7 @@ public class ValidPalindromeTest {
     @Test
     void testValidPalindrome2() {
         String str = "race a car";
-        boolean result = new ValidPalindrome().isPalindrome(str);
+        boolean result = validPalindrome.isPalindrome(str);
 
         assertFalse(result);
     }
@@ -27,7 +29,7 @@ public class ValidPalindromeTest {
     @Test
     void testValidPalindrome3() {
         String str = " ";
-        boolean result = new ValidPalindrome().isPalindrome(str);
+        boolean result = validPalindrome.isPalindrome(str);
 
         assertTrue(result);
     }
@@ -35,7 +37,7 @@ public class ValidPalindromeTest {
     @Test
     void testValidPalindrome4() {
         String str = "0P";
-        boolean result = new ValidPalindrome().isPalindrome(str);
+        boolean result = validPalindrome.isPalindrome(str);
 
         assertFalse(result);
     }

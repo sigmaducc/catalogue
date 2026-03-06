@@ -7,11 +7,13 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FrequencyOfTheMostFrequentElementTest {
 
+    private final FrequencyOfTheMostFrequentElement frequencyOfTheMostFrequentElement = new FrequencyOfTheMostFrequentElement();
+
     @Test
     void test() {
         int[] nums = {1, 4, 8, 13};
         int k = 5;
-        int result = new FrequencyOfTheMostFrequentElement().maxFrequency(nums, k);
+        int result = frequencyOfTheMostFrequentElement.maxFrequency(nums, k);
 
         assertEquals(2, result);
     }
@@ -20,7 +22,7 @@ public class FrequencyOfTheMostFrequentElementTest {
     void testLargeK() {
         int[] nums = {9940, 9995, 9944, 9937, 9941, 9952, 9907, 9952, 9987, 9964, 9940, 9914, 9941, 9933, 9912, 9934, 9980, 9907, 9980, 9944, 9910, 9997};
         int k = 7925;
-        int result = new FrequencyOfTheMostFrequentElement().maxFrequency(nums, k);
+        int result = frequencyOfTheMostFrequentElement.maxFrequency(nums, k);
 
         assertEquals(22, result);
     }
@@ -29,7 +31,7 @@ public class FrequencyOfTheMostFrequentElementTest {
     void testDuplicates() {
         int[] nums = {1,1,1,1,5,6,7,7};
         int k = 9;
-        int result = new FrequencyOfTheMostFrequentElement().maxFrequency(nums, k);
+        int result = frequencyOfTheMostFrequentElement.maxFrequency(nums, k);
 
         assertEquals(5, result);
     }
@@ -46,7 +48,7 @@ public class FrequencyOfTheMostFrequentElementTest {
             nums[i] = 9_999;
         }
 
-        int result = new FrequencyOfTheMostFrequentElement().maxFrequency(nums, k);
+        int result = frequencyOfTheMostFrequentElement.maxFrequency(nums, k);
 
         assertEquals(100_000, result);
     }
@@ -63,7 +65,7 @@ public class FrequencyOfTheMostFrequentElementTest {
             nums[i] = 1;
         }
 
-        int result = new FrequencyOfTheMostFrequentElement().maxFrequency(nums, k);
+        int result = frequencyOfTheMostFrequentElement.maxFrequency(nums, k);
 
         assertEquals(29_999, result);
     }

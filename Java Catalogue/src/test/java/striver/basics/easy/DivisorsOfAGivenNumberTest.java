@@ -9,13 +9,15 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class DivisorsOfAGivenNumberTest {
 
+    private final DivisorsOfAGivenNumber divisorsOfAGivenNumber = new DivisorsOfAGivenNumber();
+
     @Test
     void test1() {
         int n = 12;
         List<Integer> output = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 6, 12));
 
         Collections.sort(output);
-        List<Integer> result = new DivisorsOfAGivenNumber().getAllDivisors(n);
+        List<Integer> result = divisorsOfAGivenNumber.getAllDivisors(n);
         Collections.sort(result);
 
         assertArrayEquals(output.toArray(), result.toArray());
@@ -27,7 +29,7 @@ public class DivisorsOfAGivenNumberTest {
         List<Integer> output = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 6, 9, 12, 18, 36));
 
         Collections.sort(output);
-        List<Integer> result = new DivisorsOfAGivenNumber().getAllDivisors(n);
+        List<Integer> result = divisorsOfAGivenNumber.getAllDivisors(n);
         Collections.sort(result);
 
         assertArrayEquals(output.toArray(), result.toArray());

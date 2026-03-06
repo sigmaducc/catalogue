@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class RadixSortTest {
 
+    private final RadixSort radixSort = new RadixSort();
+
     @Test
     void test1() {
         int[] nums = {170, 45, 75, 90, 802, 24, 2, 66};
         int[] output = {2, 24, 45, 66, 75, 90, 170, 802};
 
-        new RadixSort().radixSort(nums);
+        radixSort.sort(nums);
 
         assertArrayEquals(output, nums);
     }
@@ -22,7 +24,7 @@ public class RadixSortTest {
         int[] nums = {170, 45, 75, 90};
         int[] output = {45, 75, 90, 170};
 
-        new RadixSort().radixSort(nums);
+        radixSort.sort(nums);
 
         assertArrayEquals(output, nums);
     }
@@ -32,7 +34,7 @@ public class RadixSortTest {
         int[] nums = {123, 432, 689, 89, 10, 21};
         int[] output = {10, 21, 89, 123, 432, 689};
 
-        new RadixSort().radixSort(nums);
+        radixSort.sort(nums);
 
         assertArrayEquals(output, nums);
     }
@@ -50,7 +52,7 @@ public class RadixSortTest {
 //            i++;
 //        }
 //
-//        new RadixSort().radixSort(nums);
+//        radixSort.sort(nums);
 //
 //        assertArrayEquals(output, nums);
 //    }

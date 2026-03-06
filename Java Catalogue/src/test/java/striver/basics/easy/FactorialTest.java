@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FactorialTest {
 
+    private final Factorial factorial = new Factorial();
+
     @Test
     void test1() {
         int n = 5;
         long output = 120L;
 
-        long result = new Factorial().factorial(n);
+        long result = factorial.factorial(n);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class FactorialTest {
         int n = 3;
         long output = 6L;
 
-        long result = new Factorial().factorial(n);
+        long result = factorial.factorial(n);
 
         assertEquals(output, result);
     }
@@ -32,7 +34,7 @@ public class FactorialTest {
         int n = 10;
         long output = 3_628_800L;
 
-        long result = new Factorial().factorial(n);
+        long result = factorial.factorial(n);
 
         assertEquals(output, result);
     }
@@ -42,7 +44,7 @@ public class FactorialTest {
         int n = 18;
         long output = 6_402_373_705_728_000L;
 
-        long result = new Factorial().factorial(n);
+        long result = factorial.factorial(n);
 
         assertEquals(output, result);
     }

@@ -8,10 +8,12 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PalindromeNumberTest {
 
+    private final PalindromeNumber palindromeNumber = new PalindromeNumber();
+
     @Test
     void testPalindromeNumber1() {
         int num = 121;
-        boolean result = new PalindromeNumber().isPalindrome(num);
+        boolean result = palindromeNumber.isPalindrome(num);
 
         assertTrue(result);
     }
@@ -19,7 +21,7 @@ public class PalindromeNumberTest {
     @Test
     void testPalindromeNumber2() {
         int num = -121;
-        boolean result = new PalindromeNumber().isPalindrome(num);
+        boolean result = palindromeNumber.isPalindrome(num);
 
         assertFalse(result);
     }
@@ -27,7 +29,7 @@ public class PalindromeNumberTest {
     @Test
     void testPalindromeNumber3() {
         int num = 10;
-        boolean result = new PalindromeNumber().isPalindrome(num);
+        boolean result = palindromeNumber.isPalindrome(num);
 
         assertFalse(result);
     }
