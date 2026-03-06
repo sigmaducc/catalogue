@@ -7,13 +7,15 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class FindFirstAndLastPositionOfElementInSortedArrayTest {
 
+    private final FindFirstAndLastPositionOfElementInSortedArray findFirstAndLastPositionOfElementInSortedArray = new FindFirstAndLastPositionOfElementInSortedArray();
+
     @Test
     void test1() {
         int[] nums = {5,7,7,8,8,10};
         int target = 8;
         int[] output = {3, 4};
 
-        int[] result = new FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target);
+        int[] result = findFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target);
 
         assertArrayEquals(output, result);
     }
@@ -24,7 +26,7 @@ public class FindFirstAndLastPositionOfElementInSortedArrayTest {
         int target = 6;
         int[] output = {-1, -1};
 
-        int[] result = new FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target);
+        int[] result = findFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target);
 
         assertArrayEquals(output, result);
     }
@@ -35,7 +37,7 @@ public class FindFirstAndLastPositionOfElementInSortedArrayTest {
         int target = 0;
         int[] output = {-1, -1};
 
-        int[] result = new FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target);
+        int[] result = findFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target);
 
         assertArrayEquals(output, result);
     }
@@ -46,7 +48,7 @@ public class FindFirstAndLastPositionOfElementInSortedArrayTest {
         int target = 42;
         int[] output = {-1, -1};
 
-        int[] result = new FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target);
+        int[] result = findFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target);
 
         assertArrayEquals(output, result);
     }
@@ -57,7 +59,7 @@ public class FindFirstAndLastPositionOfElementInSortedArrayTest {
         int target = 7;
         int[] output = {0, 0};
 
-        int[] result = new FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target);
+        int[] result = findFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target);
 
         assertArrayEquals(output, result);
     }
@@ -68,7 +70,7 @@ public class FindFirstAndLastPositionOfElementInSortedArrayTest {
         int target = 8;
         int[] output = {1, 10};
 
-        int[] result = new FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target);
+        int[] result = findFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target);
 
         assertArrayEquals(output, result);
     }
@@ -79,7 +81,7 @@ public class FindFirstAndLastPositionOfElementInSortedArrayTest {
         int target = 10;
         int[] output = {-1, -1};
 
-        int[] result = new FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target);
+        int[] result = findFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target);
 
         assertArrayEquals(output, result);
     }
@@ -90,7 +92,7 @@ public class FindFirstAndLastPositionOfElementInSortedArrayTest {
         int target = 2;
         int[] output = {1, 4};
 
-        int[] result = new FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target);
+        int[] result = findFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target);
 
         assertArrayEquals(output, result);
     }
@@ -101,7 +103,7 @@ public class FindFirstAndLastPositionOfElementInSortedArrayTest {
         int target = -999953607;
         int[] output = {1, 2};
 
-        int[] result = new FindFirstAndLastPositionOfElementInSortedArray().searchRange(nums, target);
+        int[] result = findFirstAndLastPositionOfElementInSortedArray.searchRange(nums, target);
 
         assertArrayEquals(output, result);
     }

@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SingleElementInASortedArrayTest {
 
+    private final SingleElementInASortedArray singleElementInASortedArray = new SingleElementInASortedArray();
+
     @Test
     void test1() {
         int[] nums = {1,1,2,3,3,4,4,8,8};
         int output = 2;
 
-        int result = new SingleElementInASortedArray().singleNonDuplicate(nums);
+        int result = singleElementInASortedArray.singleNonDuplicate(nums);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class SingleElementInASortedArrayTest {
         int[] nums = {3,3,7,7,10,11,11};
         int output = 10;
 
-        int result = new SingleElementInASortedArray().singleNonDuplicate(nums);
+        int result = singleElementInASortedArray.singleNonDuplicate(nums);
 
         assertEquals(output, result);
     }
@@ -32,7 +34,7 @@ public class SingleElementInASortedArrayTest {
         int[] nums = {1};
         int output = 1;
 
-        int result = new SingleElementInASortedArray().singleNonDuplicate(nums);
+        int result = singleElementInASortedArray.singleNonDuplicate(nums);
 
         assertEquals(output, result);
     }

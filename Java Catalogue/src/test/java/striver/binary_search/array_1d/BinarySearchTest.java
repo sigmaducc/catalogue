@@ -7,13 +7,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class BinarySearchTest {
 
+    private final BinarySearch binarySearch = new BinarySearch();
+
     @Test
     void test1() {
         int[] nums = {-1,0,3,5,9,12};
         int target = 9;
         int output = 4;
 
-        int result = new BinarySearch().search(nums, target);
+        int result = binarySearch.search(nums, target);
 
         assertEquals(output, result);
     }
@@ -24,7 +26,7 @@ public class BinarySearchTest {
         int target = 2;
         int output = -1;
 
-        int result = new BinarySearch().search(nums, target);
+        int result = binarySearch.search(nums, target);
 
         assertEquals(output, result);
     }
@@ -35,7 +37,7 @@ public class BinarySearchTest {
         int target = 5;
         int output = 0;
 
-        int result = new BinarySearch().search(nums, target);
+        int result = binarySearch.search(nums, target);
 
         assertEquals(output, result);
     }
@@ -46,7 +48,7 @@ public class BinarySearchTest {
         int target = 5;
         int output = 1;
 
-        int result = new BinarySearch().search(nums, target);
+        int result = binarySearch.search(nums, target);
 
         assertEquals(output, result);
     }

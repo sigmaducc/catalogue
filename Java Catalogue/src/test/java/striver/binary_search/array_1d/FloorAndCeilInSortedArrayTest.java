@@ -7,13 +7,15 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 public class FloorAndCeilInSortedArrayTest {
 
+    private final FloorAndCeilInSortedArray floorAndCeilInSortedArray = new FloorAndCeilInSortedArray();
+
     @Test
     void test1() {
         int[] nums = {3, 4, 4, 7, 8, 10};
         int x = 5;
         int[] output = {4, 7};
 
-        int[] result = new FloorAndCeilInSortedArray().search(nums, x);
+        int[] result = floorAndCeilInSortedArray.search(nums, x);
 
         assertArrayEquals(output, result);
     }
@@ -24,7 +26,7 @@ public class FloorAndCeilInSortedArrayTest {
         int x = 8;
         int[] output = {8, 8};
 
-        int[] result = new FloorAndCeilInSortedArray().search(nums, x);
+        int[] result = floorAndCeilInSortedArray.search(nums, x);
 
         assertArrayEquals(output, result);
     }

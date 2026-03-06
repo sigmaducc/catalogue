@@ -7,13 +7,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MedianOfTwoSortedArraysTest {
 
+    private final MedianOfTwoSortedArrays medianOfTwoSortedArrays = new MedianOfTwoSortedArrays();
+
     @Test
     void test1() {
         int[] nums1 = {1,3};
         int[] nums2 = {2};
         double output = 2.0;
 
-        double result = new MedianOfTwoSortedArrays().findMedianSortedArrays(nums1, nums2);
+        double result = medianOfTwoSortedArrays.findMedianSortedArrays(nums1, nums2);
 
         assertEquals(output, result);
     }
@@ -24,7 +26,7 @@ public class MedianOfTwoSortedArraysTest {
         int[] nums2 = {3,4};
         double output = 2.5;
 
-        double result = new MedianOfTwoSortedArrays().findMedianSortedArrays(nums1, nums2);
+        double result = medianOfTwoSortedArrays.findMedianSortedArrays(nums1, nums2);
 
         assertEquals(output, result);
     }
@@ -35,7 +37,7 @@ public class MedianOfTwoSortedArraysTest {
         int[] nums2 = {4,7,10,12,15,20,22};
         double output = 9;
 
-        double result = new MedianOfTwoSortedArrays().findMedianSortedArrays(nums1, nums2);
+        double result = medianOfTwoSortedArrays.findMedianSortedArrays(nums1, nums2);
 
         assertEquals(output, result);
     }
@@ -46,7 +48,7 @@ public class MedianOfTwoSortedArraysTest {
         int[] nums2 = {7,8,20,40,80};
         double output = 9;
 
-        double result = new MedianOfTwoSortedArrays().findMedianSortedArrays(nums1, nums2);
+        double result = medianOfTwoSortedArrays.findMedianSortedArrays(nums1, nums2);
 
         assertEquals(output, result);
     }
@@ -57,7 +59,7 @@ public class MedianOfTwoSortedArraysTest {
         int[] nums2 = {};
         double output = 2;
 
-        double result = new MedianOfTwoSortedArrays().findMedianSortedArrays(nums1, nums2);
+        double result = medianOfTwoSortedArrays.findMedianSortedArrays(nums1, nums2);
 
         assertEquals(output, result);
     }
@@ -68,7 +70,7 @@ public class MedianOfTwoSortedArraysTest {
         int[] nums2 = {6,7,8,9,10,11,12,13,14,15,16,17};
         double output = 9;
 
-        double result = new MedianOfTwoSortedArrays().findMedianSortedArrays(nums1, nums2);
+        double result = medianOfTwoSortedArrays.findMedianSortedArrays(nums1, nums2);
 
         assertEquals(output, result);
     }

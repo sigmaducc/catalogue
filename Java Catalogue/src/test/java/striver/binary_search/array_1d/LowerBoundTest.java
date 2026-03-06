@@ -7,13 +7,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LowerBoundTest {
 
+    private final LowerBound lowerBound = new LowerBound();
+
     @Test
     void test1() {
         int[] nums = {1,2,2,3};
         int x = 2;
         int output = 1;
 
-        int result = new LowerBound().search(nums, x);
+        int result = lowerBound.search(nums, x);
 
         assertEquals(output, result);
     }
@@ -24,7 +26,7 @@ public class LowerBoundTest {
         int x = 9;
         int output = 3;
 
-        int result = new LowerBound().search(nums, x);
+        int result = lowerBound.search(nums, x);
 
         assertEquals(output, result);
     }

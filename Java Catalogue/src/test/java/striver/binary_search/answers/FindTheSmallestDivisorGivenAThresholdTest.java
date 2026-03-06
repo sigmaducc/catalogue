@@ -7,13 +7,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FindTheSmallestDivisorGivenAThresholdTest {
 
+    private final FindTheSmallestDivisorGivenAThreshold findTheSmallestDivisorGivenAThreshold = new FindTheSmallestDivisorGivenAThreshold();
+
     @Test
     void test1() {
         int[] nums = {1,2,5,9};
         int threshold = 6;
         int output = 5;
 
-        int result = new FindTheSmallestDivisorGivenAThreshold().smallestDivisor(nums, threshold);
+        int result = findTheSmallestDivisorGivenAThreshold.smallestDivisor(nums, threshold);
 
         assertEquals(output, result);
     }
@@ -24,7 +26,7 @@ public class FindTheSmallestDivisorGivenAThresholdTest {
         int threshold = 5;
         int output = 44;
 
-        int result = new FindTheSmallestDivisorGivenAThreshold().smallestDivisor(nums, threshold);
+        int result = findTheSmallestDivisorGivenAThreshold.smallestDivisor(nums, threshold);
 
         assertEquals(output, result);
     }

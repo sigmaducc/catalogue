@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MinimumNumberOfDaysToMakeMBouquetsTest {
 
+    private final MinimumNumberOfDaysToMakeMBouquets minimumNumberOfDaysToMakeMBouquets = new MinimumNumberOfDaysToMakeMBouquets();
+
     @Test
     void test1() {
         int[] bloomDay = {1,10,3,10,2};
         int m = 3; int k = 1;
         int output = 3;
-        int result = new MinimumNumberOfDaysToMakeMBouquets().minDays(bloomDay, m, k);
+        int result = minimumNumberOfDaysToMakeMBouquets.minDays(bloomDay, m, k);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class MinimumNumberOfDaysToMakeMBouquetsTest {
         int[] bloomDay = {1,10,3,10,2};
         int m = 3; int k = 2;
         int output = -1;
-        int result = new MinimumNumberOfDaysToMakeMBouquets().minDays(bloomDay, m, k);
+        int result = minimumNumberOfDaysToMakeMBouquets.minDays(bloomDay, m, k);
 
         assertEquals(output, result);
     }
@@ -32,7 +34,7 @@ public class MinimumNumberOfDaysToMakeMBouquetsTest {
         int[] bloomDay = {7,7,7,7,12,7,7};
         int m = 2; int k = 3;
         int output = 12;
-        int result = new MinimumNumberOfDaysToMakeMBouquets().minDays(bloomDay, m, k);
+        int result = minimumNumberOfDaysToMakeMBouquets.minDays(bloomDay, m, k);
 
         assertEquals(output, result);
     }
@@ -42,7 +44,7 @@ public class MinimumNumberOfDaysToMakeMBouquetsTest {
         int[] bloomDay = {1000000000,1000000000};
         int m = 1; int k = 1;
         int output = 1000000000;
-        int result = new MinimumNumberOfDaysToMakeMBouquets().minDays(bloomDay, m, k);
+        int result = minimumNumberOfDaysToMakeMBouquets.minDays(bloomDay, m, k);
 
         assertEquals(output, result);
     }

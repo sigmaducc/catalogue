@@ -8,12 +8,14 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SearchInRotatedSortedArray2Test {
 
+    private final SearchInRotatedSortedArray2 searchInRotatedSortedArray2 = new SearchInRotatedSortedArray2();
+
     @Test
     void test1() {
         int[] nums = {2,2,2,5,6,0,0,1,2,2,2,2};
         int target = 0;
 
-        boolean result = new SearchInRotatedSortedArray2().search(nums, target);
+        boolean result = searchInRotatedSortedArray2.search(nums, target);
 
         assertTrue(result);
     }
@@ -23,7 +25,7 @@ public class SearchInRotatedSortedArray2Test {
         int[] nums = {2,5,6,0,0,1,2};
         int target = 3;
 
-        boolean result = new SearchInRotatedSortedArray2().search(nums, target);
+        boolean result = searchInRotatedSortedArray2.search(nums, target);
 
         assertFalse(result);
     }
@@ -33,7 +35,7 @@ public class SearchInRotatedSortedArray2Test {
         int[] nums = {1,0,1,1,1};
         int target = 0;
 
-        boolean result = new SearchInRotatedSortedArray2().search(nums, target);
+        boolean result = searchInRotatedSortedArray2.search(nums, target);
 
         assertTrue(result);
     }
@@ -43,7 +45,7 @@ public class SearchInRotatedSortedArray2Test {
         int[] nums = {1,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1};
         int target = 2;
 
-        boolean result = new SearchInRotatedSortedArray2().search(nums, target);
+        boolean result = searchInRotatedSortedArray2.search(nums, target);
 
         assertTrue(result);
     }
@@ -53,7 +55,7 @@ public class SearchInRotatedSortedArray2Test {
         int[] nums = {1};
         int target = 0;
 
-        boolean result = new SearchInRotatedSortedArray2().search(nums, target);
+        boolean result = searchInRotatedSortedArray2.search(nums, target);
 
         assertFalse(result);
     }

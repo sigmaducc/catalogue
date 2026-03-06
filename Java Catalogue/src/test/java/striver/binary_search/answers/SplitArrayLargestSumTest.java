@@ -7,13 +7,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SplitArrayLargestSumTest {
 
+    private final SplitArrayLargestSum splitArrayLargestSum = new SplitArrayLargestSum();
+
     @Test
     void test1() {
         int[] nums = {7,2,5,10,8};
         int k = 2;
         int output = 18;
 
-        int result = new SplitArrayLargestSum().splitArray(nums, k);
+        int result = splitArrayLargestSum.splitArray(nums, k);
 
         assertEquals(output, result);
     }
@@ -24,7 +26,7 @@ public class SplitArrayLargestSumTest {
         int k = 2;
         int output = 9;
 
-        int result = new SplitArrayLargestSum().splitArray(nums, k);
+        int result = splitArrayLargestSum.splitArray(nums, k);
 
         assertEquals(output, result);
     }
@@ -35,7 +37,7 @@ public class SplitArrayLargestSumTest {
         int k = 3;
         int output = 4;
 
-        int result = new SplitArrayLargestSum().splitArray(nums, k);
+        int result = splitArrayLargestSum.splitArray(nums, k);
 
         assertEquals(output, result);
     }

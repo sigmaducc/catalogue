@@ -10,6 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 public class ReverseDoublyLinkedListTest {
 
     private final DoublyLinkedList linkedList = new DoublyLinkedList();
+    private final ReverseDoublyLinkedList reverseDoublyLinkedList = new ReverseDoublyLinkedList();
 
     @Test
     void test1() {
@@ -18,7 +19,7 @@ public class ReverseDoublyLinkedListTest {
 
         Node<Integer> head = linkedList.construct(nums);
         linkedList.print(head);
-        head = new ReverseDoublyLinkedList().reverse(head);
+        head = reverseDoublyLinkedList.reverse(head);
         linkedList.print(head);
 
         assertArrayEquals(output, linkedList.toArray(head));
@@ -31,7 +32,7 @@ public class ReverseDoublyLinkedListTest {
 
         Node<Integer> head = linkedList.construct(nums);
         linkedList.print(head);
-        head = new ReverseDoublyLinkedList().reverse(head);
+        head = reverseDoublyLinkedList.reverse(head);
         linkedList.print(head);
 
         assertArrayEquals(output, linkedList.toArray(head));

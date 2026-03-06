@@ -7,13 +7,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CapacityToShipPackagesWithinDDaysTest {
 
+    private final CapacityToShipPackagesWithinDDays capacityToShipPackagesWithinDDays = new CapacityToShipPackagesWithinDDays();
+
     @Test
     void test1() {
         int[] weights = {1,2,3,4,5,6,7,8,9,10};
         int days = 5;
         int output = 15;
 
-        int result = new CapacityToShipPackagesWithinDDays().shipWithinDays(weights, days);
+        int result = capacityToShipPackagesWithinDDays.shipWithinDays(weights, days);
 
         assertEquals(output, result);
     }
@@ -24,7 +26,7 @@ public class CapacityToShipPackagesWithinDDaysTest {
         int days = 3;
         int output = 6;
 
-        int result = new CapacityToShipPackagesWithinDDays().shipWithinDays(weights, days);
+        int result = capacityToShipPackagesWithinDDays.shipWithinDays(weights, days);
 
         assertEquals(output, result);
     }
@@ -35,7 +37,7 @@ public class CapacityToShipPackagesWithinDDaysTest {
         int days = 4;
         int output = 3;
 
-        int result = new CapacityToShipPackagesWithinDDays().shipWithinDays(weights, days);
+        int result = capacityToShipPackagesWithinDDays.shipWithinDays(weights, days);
 
         assertEquals(output, result);
     }

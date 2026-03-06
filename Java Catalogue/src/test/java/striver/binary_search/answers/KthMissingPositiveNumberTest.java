@@ -1,5 +1,6 @@
 package striver.binary_search.answers;
 
+import com.adnan.striver.binary_search.answers.KokoEatingBananas;
 import com.adnan.striver.binary_search.answers.KthMissingPositiveNumber;
 import org.junit.jupiter.api.Test;
 
@@ -7,13 +8,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class KthMissingPositiveNumberTest {
 
+    private final KthMissingPositiveNumber kthMissingPositiveNumber = new KthMissingPositiveNumber();
+
     @Test
     void test1() {
         int[] arr = {2,3,4,7,11};
         int k = 5;
         int output = 9;
 
-        int result = new KthMissingPositiveNumber().findKthPositive(arr, k);
+        int result = kthMissingPositiveNumber.findKthPositive(arr, k);
 
         assertEquals(output, result);
     }
@@ -24,7 +27,7 @@ public class KthMissingPositiveNumberTest {
         int k = 2;
         int output = 6;
 
-        int result = new KthMissingPositiveNumber().findKthPositive(arr, k);
+        int result = kthMissingPositiveNumber.findKthPositive(arr, k);
 
         assertEquals(output, result);
     }

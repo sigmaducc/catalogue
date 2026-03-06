@@ -7,13 +7,15 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CountOccurrencesInSortedArrayTest {
 
+    private final CountOccurrencesInSortedArray countOccurrencesInSortedArray = new CountOccurrencesInSortedArray();
+
     @Test
     void test1() {
         int[] nums = {2, 2 , 3 , 3 , 3 , 3 , 4};
         int target = 3;
         int output = 4;
 
-        int result = new CountOccurrencesInSortedArray().count(nums, target);
+        int result = countOccurrencesInSortedArray.count(nums, target);
 
         assertEquals(output, result);
     }
@@ -24,7 +26,7 @@ public class CountOccurrencesInSortedArrayTest {
         int target = 2;
         int output = 5;
 
-        int result = new CountOccurrencesInSortedArray().count(nums, target);
+        int result = countOccurrencesInSortedArray.count(nums, target);
 
         assertEquals(output, result);
     }

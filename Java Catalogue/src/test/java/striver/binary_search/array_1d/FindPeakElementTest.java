@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FindPeakElementTest {
 
+    private final FindPeakElement findPeakElement = new FindPeakElement();
+
     @Test
     void test1() {
         int[] nums = {1,2,3,1};
         int output = 2;
 
-        int result = new FindPeakElement().findPeakElement(nums);
+        int result = findPeakElement.findPeakElement(nums);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class FindPeakElementTest {
         int[] nums = {1,2,1,3,5,6,4};
         int output = 5;
 
-        int result = new FindPeakElement().findPeakElement(nums);
+        int result = findPeakElement.findPeakElement(nums);
 
         assertEquals(output, result);
     }
@@ -32,7 +34,7 @@ public class FindPeakElementTest {
         int[] nums = {-2147483648};
         int output = 0;
 
-        int result = new FindPeakElement().findPeakElement(nums);
+        int result = findPeakElement.findPeakElement(nums);
 
         assertEquals(output, result);
     }
@@ -43,7 +45,7 @@ public class FindPeakElementTest {
         int[] nums = {-2147483648,-2147483647};
         int output = 1;
 
-        int result = new FindPeakElement().findPeakElement(nums);
+        int result = findPeakElement.findPeakElement(nums);
 
         assertEquals(output, result);
     }
@@ -53,7 +55,7 @@ public class FindPeakElementTest {
         int[] nums = {6,5,4,3,2,3,2};
         int output = 0;
 
-        int result = new FindPeakElement().findPeakElement(nums);
+        int result = findPeakElement.findPeakElement(nums);
 
         assertEquals(output, result);
     }
@@ -63,7 +65,7 @@ public class FindPeakElementTest {
         int[] nums = {1,2};
         int output = 1;
 
-        int result = new FindPeakElement().findPeakElement(nums);
+        int result = findPeakElement.findPeakElement(nums);
 
         assertEquals(output, result);
     }
@@ -73,7 +75,7 @@ public class FindPeakElementTest {
         int[] nums = {2,1};
         int output = 0;
 
-        int result = new FindPeakElement().findPeakElement(nums);
+        int result = findPeakElement.findPeakElement(nums);
 
         assertEquals(output, result);
     }
@@ -83,7 +85,7 @@ public class FindPeakElementTest {
         int[] nums = {1};
         int output = 0;
 
-        int result = new FindPeakElement().findPeakElement(nums);
+        int result = findPeakElement.findPeakElement(nums);
 
         assertEquals(output, result);
     }
