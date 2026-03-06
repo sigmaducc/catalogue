@@ -7,6 +7,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MaximizeFriendshipPowerTest {
 
+    private final MaximizeFriendshipPower maximizeFriendshipPower = new MaximizeFriendshipPower();
+
     @Test
     void test1() {
         int N = 5;
@@ -15,7 +17,7 @@ public class MaximizeFriendshipPowerTest {
         int[][] roads = {{1,2}, {1,3},{4,5}};
         int output = 51;
 
-        int result = new MaximizeFriendshipPower().maximizeFriendshipPower(N, M, roads, A);
+        int result = maximizeFriendshipPower.maximizeFriendshipPower(N, M, roads, A);
 
         assertEquals(output, result);
     }
@@ -28,7 +30,7 @@ public class MaximizeFriendshipPowerTest {
         int[][] roads = {{1,3}, {2,4}};
         int output = 39;
 
-        int result = new MaximizeFriendshipPower().maximizeFriendshipPower(N, M, roads, A);
+        int result = maximizeFriendshipPower.maximizeFriendshipPower(N, M, roads, A);
 
         assertEquals(output, result);
     }

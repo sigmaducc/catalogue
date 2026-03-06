@@ -10,12 +10,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ReduceArrayTest {
 
+    private final ReduceArray reduceArray = new ReduceArray();
+
     @Test
     void test1() {
         List<Integer> nums = new ArrayList<>(List.of(2, 3, 4, 5, 7));
         int output = 8;
 
-        int result = new ReduceArray().totalCost(nums);
+        int result = reduceArray.totalCost(nums);
 
         assertEquals(output, result);
     }
@@ -29,7 +31,7 @@ public class ReduceArrayTest {
             nums.add(i);
         }
 
-        int result = new ReduceArray().totalCost(nums);
+        int result = reduceArray.totalCost(nums);
 
         assertEquals(output, result);
     }

@@ -7,12 +7,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class CountBinarySubstringsTest {
 
+    private final CountBinarySubstrings countBinarySubstrings = new CountBinarySubstrings();
+
     @Test
     void test1() {
         String s = "011001";
         int output = 4;
 
-        int result = new CountBinarySubstrings().countBinarySubstrings(s);
+        int result = countBinarySubstrings.countBinarySubstrings(s);
 
         assertEquals(output, result);
     }
@@ -22,7 +24,7 @@ public class CountBinarySubstringsTest {
         String s = "001100011";
         int output = 6;
 
-        int result = new CountBinarySubstrings().countBinarySubstrings(s);
+        int result = countBinarySubstrings.countBinarySubstrings(s);
 
         assertEquals(output, result);
     }
