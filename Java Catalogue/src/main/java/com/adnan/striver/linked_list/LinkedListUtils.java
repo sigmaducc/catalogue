@@ -72,4 +72,11 @@ public class LinkedListUtils {
         System.out.println(head);
     }
 
+    public static void print(ListNode head, boolean val) {
+        if(val)
+            System.out.println(head.valueString());
+        else
+            print(head);
+    }
+
 }

@@ -17,7 +17,7 @@ public class LinkedListCycleTest {
         int[] nums = {3,2,0,-4};
 
         ListNode head = LinkedListUtils.construct(nums);
-        LinkedListUtils.print(head);
+        LinkedListUtils.print(head, true);
         LinkedListUtils.addCycle(head, 1);
         boolean result = linkedListCycle.hasCycle(head);
 
@@ -29,7 +29,7 @@ public class LinkedListCycleTest {
         int[] nums = {1,2};
 
         ListNode head = LinkedListUtils.construct(nums);
-        LinkedListUtils.print(head);
+        LinkedListUtils.print(head, true);
         LinkedListUtils.addCycle(head, 0);
         boolean result = linkedListCycle.hasCycle(head);
 
@@ -41,7 +41,7 @@ public class LinkedListCycleTest {
         int[] nums = {1};
 
         ListNode head = LinkedListUtils.construct(nums);
-        LinkedListUtils.print(head);
+        LinkedListUtils.print(head, true);
         LinkedListUtils.addCycle(head, -1);
         boolean result = linkedListCycle.hasCycle(head);
 

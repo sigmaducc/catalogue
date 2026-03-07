@@ -16,7 +16,7 @@ public class LinkedListCycle2Test {
         int[] nums = {3,2,0,-4};
 
         ListNode head = LinkedListUtils.construct(nums);
-        LinkedListUtils.print(head);
+        LinkedListUtils.print(head, true);
         ListNode cycleNode = LinkedListUtils.addCycle(head, 1);
         ListNode result = linkedListCycle2.detectCycle(head);
         System.out.println(linkedListCycle2.loopLength(head));
@@ -29,7 +29,7 @@ public class LinkedListCycle2Test {
         int[] nums = {1,2};
 
         ListNode head = LinkedListUtils.construct(nums);
-        LinkedListUtils.print(head);
+        LinkedListUtils.print(head, true);
         ListNode cycleNode = LinkedListUtils.addCycle(head, 0);
         ListNode result = linkedListCycle2.detectCycle(head);
         System.out.println(linkedListCycle2.loopLength(head));
@@ -42,7 +42,7 @@ public class LinkedListCycle2Test {
         int[] nums = {1};
 
         ListNode head = LinkedListUtils.construct(nums);
-        LinkedListUtils.print(head);
+        LinkedListUtils.print(head, true);
         ListNode cycleNode = LinkedListUtils.addCycle(head, -1);
         ListNode result = linkedListCycle2.detectCycle(head);
         System.out.println(linkedListCycle2.loopLength(head));
@@ -55,7 +55,7 @@ public class LinkedListCycle2Test {
         int[] nums = {1,2,3,4};
 
         ListNode head = LinkedListUtils.construct(nums);
-        LinkedListUtils.print(head);
+        LinkedListUtils.print(head, true);
         ListNode cycleNode = LinkedListUtils.addCycle(head, 0);
         ListNode result = linkedListCycle2.detectCycle(head);
         System.out.println(linkedListCycle2.loopLength(head));
