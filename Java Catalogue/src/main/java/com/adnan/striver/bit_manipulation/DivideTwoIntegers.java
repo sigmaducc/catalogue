@@ -20,6 +20,9 @@ package com.adnan.striver.bit_manipulation;
 // We stop at 2. At each step we maintain sum and ans and keep reducing the dividend.
 
 public class DivideTwoIntegers {
+
+    // Time Complexity: O(logn * logn) because each loop halves the dividend
+    // Space Complexity: O(1)
     public int divide(int divid, int divis) {
         long ans = 0;
         int sign = 1;

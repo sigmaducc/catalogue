@@ -4,6 +4,8 @@ package com.adnan.striver.bit_manipulation;
 
 public class CountTheNumberOfSetBits {
 
+    // Time Complexity: O(log n)
+    // Space Complexity: O(1)
     public int count(int n) {
         int counter = 0;
 

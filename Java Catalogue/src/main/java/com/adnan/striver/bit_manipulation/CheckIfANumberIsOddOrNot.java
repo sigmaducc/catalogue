@@ -4,6 +4,8 @@ package com.adnan.striver.bit_manipulation;
 
 public class CheckIfANumberIsOddOrNot {
 
+    // Time Complexity: O(1)
+    // Space Complexity: O(1)
     public boolean check(int n) {
 
         return (n & 1) != 0;

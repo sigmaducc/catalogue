@@ -4,6 +4,8 @@ package com.adnan.striver.bit_manipulation;
 
 public class CheckIfBitIsSetOrNot {
 
+    // Time Complexity: O(1)
+    // Space Complexity: O(1)
     public boolean check(int n, int i) {
 
         return (n & (1 << i)) != 0;

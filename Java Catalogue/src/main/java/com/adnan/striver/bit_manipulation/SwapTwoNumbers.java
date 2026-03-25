@@ -4,6 +4,8 @@ package com.adnan.striver.bit_manipulation;
 
 public class SwapTwoNumbers {
 
+    // Time Complexity: O(1)
+    // Space Complexity: O(1)
     public void swap(int[] nums) {
         if(nums.length == 0 || nums.length > 2) return;
 //        a = a ^ b;
@@ -13,6 +15,5 @@ public class SwapTwoNumbers {
         nums[0] = nums[0] ^ nums[1];
         nums[1] = nums[0] ^ nums[1];
         nums[0] = nums[0] ^ nums[1];
-
     }
 }
