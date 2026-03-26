@@ -20,20 +20,23 @@ public class StackArrays<T> implements Stack<T> {
 
     @Override
     public void push(T x) {
-        checkOverflow();
-        stack[++this.top] = x;
+        if(this.size() == this.capacity)
+            resize();
+
+        this.stack[++this.top] = x;
     }
 
     @SuppressWarnings("unchecked")
     @Override
     public T pop() {
-        checkUnderflow();
+        if(this.isEmpty())
+            throw new NoSuchElementException();
 
-        T val = (T) stack[this.top];
-        stack[top--] = null;
+        T val = (T) this.stack[this.top];
+        this.stack[this.top--] = null;
 
         if(this.size() <= this.capacity / 4) {
-            shrink();
+            this.shrink();
         }
 
         return val;
@@ -42,9 +45,10 @@ public class StackArrays<T> implements Stack<T> {
     @SuppressWarnings("unchecked")
     @Override
     public T top() {
-        checkUnderflow();
+        if(this.isEmpty())
+            throw new NoSuchElementException();
 
-        return (T) stack[this.top];
+        return (T) this.stack[this.top];
     }
 
     @Override
@@ -57,14 +61,8 @@ public class StackArrays<T> implements Stack<T> {
         return this.size() == 0;
     }
 
-    private void checkUnderflow() {
-        if(this.top < 0)
-            throw new NoSuchElementException();
-    }
-
-    private void checkOverflow() {
-        if(this.top >= this.capacity - 1)
-            resize();
+    public int getCapacity() {
+        return this.capacity;
     }
 
     private void resize() {
@@ -81,7 +79,7 @@ public class StackArrays<T> implements Stack<T> {
     private void shrink() {
         int capacity = this.capacity / 2;
 
-        if(capacity < DEFAULT_CAPACITY) return;
+        if(capacity < this.DEFAULT_CAPACITY) return;
 
         Object[] st = new Object[capacity];
 
