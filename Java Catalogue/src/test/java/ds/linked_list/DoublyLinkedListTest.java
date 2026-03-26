@@ -1,4 +1,4 @@
-package ds;
+package ds.linked_list;
 
 import com.adnan.ds.linked_list.doubly.DoublyLinkedList;
 import com.adnan.ds.linked_list.doubly.Node;
