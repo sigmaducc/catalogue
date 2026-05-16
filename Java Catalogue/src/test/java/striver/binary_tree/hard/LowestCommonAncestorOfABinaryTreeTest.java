@@ -5,7 +5,7 @@ import com.adnan.striver.binary_tree.TreeUtils;
 import com.adnan.striver.binary_tree.hard.LowestCommonAncestorOfABinaryTree;
 import org.junit.jupiter.api.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class LowestCommonAncestorOfABinaryTreeTest {
 

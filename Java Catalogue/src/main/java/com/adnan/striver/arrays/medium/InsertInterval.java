@@ -28,36 +28,29 @@ public class InsertInterval {
     // Space Complexity: O(2*n + 2*n) ~ O(n)
     public int[][] insert(int[][] intervals, int[] newInterval) {
         if(intervals.length == 0) {
-            return new int[][] {{newInterval[0], newInterval[1]}};
+            return new int[][] {newInterval};
         }
 
         int[][] aux = new int[intervals.length+1][2];
         List<int[]> list = new ArrayList<>();
 
-        int i = intervals.length - 1;
-        int j = aux.length - 1;
+        int i = 0; int j = 0;
         boolean filled = false;
-
-        while(i >= 0 && j >= 0) {
-            if(intervals[i][0] > newInterval[0]) {
-                aux[j] = intervals[i];
-                i--;
-                j--;
+        while(i <= intervals.length - 1) {
+            if(intervals[i][0] <= newInterval[0]) {
+                aux[j++] = intervals[i++];
             } else {
-                aux[j] = newInterval;
-                j--;
+                aux[j++] = newInterval;
                 filled = true;
                 break;
             }
         }
 
-        while(i >= 0 && j >= 0) {
-            aux[j] = intervals[i];
-            i--;
-            j--;
+        while(i <= intervals.length - 1) {
+            aux[j++] = intervals[i++];
         }
 
-        if(!filled && j >= 0) {
+        if(!filled) {
             aux[j] = newInterval;
         }
 
