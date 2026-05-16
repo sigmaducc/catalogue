@@ -5,8 +5,8 @@ import com.adnan.striver.binary_tree.TreeUtils;
 import com.adnan.striver.binary_tree.easy_medium.SameTree;
 import org.junit.jupiter.api.Test;
 
-import static org.testng.AssertJUnit.assertFalse;
-import static org.testng.AssertJUnit.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class SameTreeTest {
 
