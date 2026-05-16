@@ -67,23 +67,22 @@ public class TreeUtils {
         return root;
     }
 
-    public static void printTree(TreeNode root) {
-        printTree(root, 0);
-    }
+    public static TreeNode find(TreeNode root, int val) {
+        if(root == null) return null;
 
-    private static void printTree(TreeNode node, int level) {
+        Deque<TreeNode> q = new ArrayDeque<>();
 
-        if (node == null)
-            return;
+        q.offer(root);
 
-        printTree(node.right, level + 1);
+        while(!q.isEmpty()) {
+            TreeNode node = q.poll();
 
-        for (int i = 0; i < level; i++) {
-            System.out.print("    ");
+            if(node.val == val) return node;
+
+            if(node.left != null) q.offer(node.left);
+            if(node.right != null) q.offer(node.right);
         }
 
-        System.out.println(node.val);
-
-        printTree(node.left, level + 1);
+        return null;
     }
 }
