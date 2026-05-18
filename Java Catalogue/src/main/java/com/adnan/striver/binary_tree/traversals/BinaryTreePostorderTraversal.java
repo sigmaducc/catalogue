@@ -20,6 +20,9 @@ import java.util.List;
 
 public class BinaryTreePostorderTraversal {
 
+    // Iterative
+    // Time Complexity: O(N)
+    // Space Complexity: O(2N)
     public List<Integer> postorderTraversal(TreeNode root) {
         if(root == null) return new ArrayList<>();
 
@@ -44,6 +47,8 @@ public class BinaryTreePostorderTraversal {
     }
 
     // Recursive
+    // Time Complexity: O(N)
+    // Space Complexity: O(N)
 //    public List<Integer> postorderTraversal(TreeNode root) {
 //        List<Integer> list = new ArrayList<>();
 //        postorder(root, list);
