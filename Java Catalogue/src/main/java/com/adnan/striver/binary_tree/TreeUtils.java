@@ -4,6 +4,33 @@ import java.util.*;
 
 public class TreeUtils {
 
+    public static Integer[] sort(TreeNode root) {
+        if(root == null) return new Integer[] {};
+
+        List<TreeNode> list = new ArrayList<>();
+        Deque<TreeNode> stack = new ArrayDeque<>();
+
+        TreeNode curr = root;
+        while(curr != null || !stack.isEmpty()) {
+            while(curr != null) {
+                stack.push(curr);
+                curr = curr.left;
+            }
+
+            curr = stack.pop();
+            list.add(curr);
+            curr = curr.right;
+        }
+
+        int i = 0;
+        Integer[] result = new Integer[list.size()];
+        for(TreeNode node: list) {
+            result[i++] = node.val;
+        }
+
+        return result;
+    }
+
     public static Integer[] toArray(TreeNode root) {
         if(root == null)
             return new Integer[]{};
