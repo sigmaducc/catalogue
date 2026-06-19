@@ -32,4 +32,13 @@ public class InputUtil {
             throw new RuntimeException("Error reading array from file", e);
         }
     }
+
+    public static String readLine(String filePath) {
+        try {
+            BufferedReader br = new BufferedReader(new FileReader(filePath));
+            return br.readLine().trim();
+        } catch (Exception e) {
+            throw new RuntimeException("Error reading array from file", e);
+        }
+    }
 }

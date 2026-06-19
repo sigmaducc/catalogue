@@ -1,7 +1,5 @@
 package com.adnan.striver.linked_list;
 
-import com.adnan.ds.linked_list.singly.Node;
-
 import java.util.StringJoiner;
 
 public class ListNode {
